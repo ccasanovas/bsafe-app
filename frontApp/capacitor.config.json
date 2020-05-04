@@ -1,0 +1,20 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "Ionic 2 Google Maps Marker Clusterer",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {
+    "preferences": {
+      "SplashScreen": "none",
+      "webviewbounce": "false",
+      "UIWebViewBounce": "false",
+      "DisallowOverscroll": "true",
+      "android-minSdkVersion": "16",
+      "BackupWebStorage": "none",
+      "SplashMaintainAspectRatio": "true",
+      "FadeSplashScreenDuration": "300",
+      "SplashShowOnlyFirstTime": "true"
+    }
+  }
+}

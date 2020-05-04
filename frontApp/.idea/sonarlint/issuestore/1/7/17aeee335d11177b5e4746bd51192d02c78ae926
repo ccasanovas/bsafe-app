@@ -1,0 +1,7 @@
+
+]squid:S1193Ù"@Replace the usage of the "instanceof" operator by a catch block.(ä¾ˆ§øÿÿÿÿ
+0squid:S3626"Remove this redundant jump.(ûÁİ…
+csquid:S1192Ê"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(æÒıÕÿÿÿÿÿ
+rsquid:S1149?"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(Ş¥Éñùÿÿÿÿ
+^squid:S1126í"AReplace this if-then-else statement by a single return statement.(ÃÊ¦Şÿÿÿÿÿ
+ªsquid:S2293?"Replace the type specification in this constructor call with the diamond operator ("<>"). (sonar.java.source not set. Assuming 7 or greater.)(Ş¥Éñùÿÿÿÿ

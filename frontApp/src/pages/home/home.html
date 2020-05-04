@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar class="login-content">
+  <ion-buttons left menuToggle>
+    <button ion-button icon-only>
+      <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>
+    </button>
+  </ion-buttons>
+  <ion-title style="text-align:center; font-family: 'Roboto'">Inicio</ion-title>
+  </ion-navbar>
+  </ion-header>
+
+<ion-content  no-padding no-margin>
+    <ion-card id="content" *ngIf="feedDataSet != null">
+      <ion-avatar id="profile-info">
+        <img id="profile-image" src="https://cdn.pixabay.com/photo/2018/05/15/17/46/frida-3403761_960_720.jpg">
+      </ion-avatar>
+        <ion-card-content id="quote">
+          <h3 style="color: #f1f1f1; font-family: 'Roboto'; font-weight: 400; font-size: 16px">{{feedDataSet.quote}}
+            <h6 style="color: #f1f1f1; font-family: 'Roboto'; font-weight: 400; font-size: 16px">{{feedDataSet.author}}</h6></h3>
+        </ion-card-content>
+
+    </ion-card>
+  <!-- fab placed to the bottom start -->
+  <ion-fab bottom center>
+    <button (click)="sendSOSAlert()" ion-fab color="danger">SOS</button>
+  </ion-fab>
+
+</ion-content>

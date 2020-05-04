@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar class="login-content">
+    <ion-buttons left menuToggle>
+      <button ion-button icon-only>
+        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title style="text-align:center; font-family: 'Roboto'">Mis contactos</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen >
+  <br><br>
+
+  <ion-list *ngFor="let item of (contactsData || []);">
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-left><img src="https://cdn.pixabay.com/photo/2016/03/31/14/47/avatar-1292817_960_720.png" style="width: 34px; height: 38px;">
+        </ion-avatar>
+        <span style="font-family: 'Roboto'">{{item.name}}</span><br>
+        <span style="font-family: 'Roboto'; font-size: 12px">{{item.phone_number}}</span>
+        <button ion-button style="background-color: #f30d0d; font-family: 'Roboto'" (click)="presentAlert(item.phone_number)" item-right>+ Borrar</button>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+  <ion-fab bottom right style="margin-right: 5%">
+      <button (click)="presentModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="add"></ion-icon></button>
+    </ion-fab>
+  </ion-content>

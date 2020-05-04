@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar class="login-content">
+    <ion-buttons left menuToggle>
+      <button ion-button icon-only>
+        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title style="text-align:center">Mi perfil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content has-header="true" >
+
+  <div id="profile-bg"></div>
+  <div id="content">
+    <div *ngIf="feedDataSet" id="profile-info">
+      <img  id="profile-image"  src="https://bsafe.tepongoenred.com/uploads/{{feedDataSet.avatar}}">
+      <button (click)="presentActionSheet()" id="addProfilePicture">+</button>
+      <h5 id="profile-name">{{userDetails.username}}</h5>
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-buttons>
+          <button style="font-family: 'Roboto'; font-weight: 400; font-size: 16px" ion-button class="submit-btn" (click)="presentModalPassword()" full>Cambiar contraseña</button>
+          <button style="font-family: 'Roboto'; font-weight: 400; font-size: 16px" ion-button class="submit-btn" (click)="presentModalMessage()" full>Editar mensaje de emergencia</button>
+          <button style="font-family: 'Roboto'; font-weight: 400; font-size: 16px;"  color="danger" ion-button (click)="presentAlertLogOut()" full >Cerrar sesión</button>
+
+        </ion-buttons>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

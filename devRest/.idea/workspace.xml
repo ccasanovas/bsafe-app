@@ -2,61 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b67c9e95-12de-40e7-8e5a-99540ddae346" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/forgotPasswordFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/error.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/forgot.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/success.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontApp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/appRest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/appRest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09652a6497de0403bd2090e61381ced4d8bf7fe3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09652a6497de0403bd2090e61381ced4d8bf7fe3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/672f604204e0511f7f0ebf0638ff4f86bd1d3f01" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/672f604204e0511f7f0ebf0638ff4f86bd1d3f01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdea660105e531675509930c33be134de8d63ec7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ApiUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ApiUserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FirebaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FirebaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LocationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MailerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MailerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/.idea/sonarIssues.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/.idea/sonarlint/issuestore/c/8/c88681139c6e4464bbd6995c6c25ac73afca920b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/.sourcemaps/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/node_modules/cordova-android/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/node_modules/cordova-android/node_modules/nopt/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/node_modules/cordova-android/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/node_modules/cordova-android/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/CordovaLib/CordovaLib.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/android.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/android.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/vendor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/cordova_plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/res/xml/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/cordova/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/cordova/node_modules/nopt/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/platform_www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/platform_www/cordova_plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/plugins/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/plugins/android.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/vendor.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,13 +39,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="dc1e1a22-42ac-4e57-837a-b1199a8b47d9" name="AppRest" port="8000" use_path_mappings="true" />
       <server host="localhost:8000" id="b3c31842-e1af-4d95-bcf5-5af0a05ba9b8" name="localhost:8000" port="8000" />
+      <server host="127.0.0.1:8000" id="cb9bd291-5481-4b07-82ed-4b73a8fb6d1b" name="127.0.0.1:8000" port="8000" />
     </servers>
   </component>
-  <component name="PhpWebServerValidation" path_to_validation_script="C:\appRest\public" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost:8000" />
+  <component name="PhpWebServerValidation" path_to_validation_script="C:\ccasanovasgit\bsafe-app\devRest\public" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost:8000" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/rize/uri-template" />
@@ -220,7 +175,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/idata-suite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunManager">
@@ -316,6 +271,8 @@
       <workItem from="1588860329299" duration="9000" />
       <workItem from="1588860371197" duration="168000" />
       <workItem from="1589045330556" duration="14372000" />
+      <workItem from="1589064258323" duration="731000" />
+      <workItem from="1589065011137" duration="523000" />
     </task>
     <servers />
   </component>
@@ -327,14 +284,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="397" y="88" key="#AppRest/0.0.1366.728@0.0.1366.728" timestamp="1585065256430" />
-    <state x="263" y="20" key="#Servers" timestamp="1585065208285">
+    <state x="263" y="20" key="#Servers" timestamp="1589064969448">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="20" key="#Servers/0.0.1366.728@0.0.1366.728" timestamp="1585065208285" />
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585066096353">
+    <state x="263" y="20" key="#Servers/0.0.1366.728@0.0.1366.728" timestamp="1589064969448" />
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589064970549">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585066096353" />
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1589064970549" />
     <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586367431608">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -343,66 +300,66 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589050692733" />
-    <state x="398" y="181" width="570" height="455" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1585066068030">
+    <state x="398" y="181" width="570" height="455" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1589064915384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="398" y="181" width="570" height="455" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1366.728@0.0.1366.728" timestamp="1585066068030" />
+    <state x="398" y="181" width="570" height="455" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1366.728@0.0.1366.728" timestamp="1589064915384" />
     <state width="588" height="618" key="DebuggerActiveHint" timestamp="1585074722984">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="588" height="618" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1585074722984" />
-    <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1589051377863">
+    <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1589064839722">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589051377863" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1589061976539">
+    <state x="463" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589064839722" />
+    <state width="1323" height="105" key="GridCell.Tab.0.bottom" timestamp="1589065202682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1589061976539">
+    <state width="1323" height="105" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589065202682" />
+    <state width="1323" height="105" key="GridCell.Tab.0.center" timestamp="1589065202682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1589061976539">
+    <state width="1323" height="105" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589065202682" />
+    <state width="1323" height="105" key="GridCell.Tab.0.left" timestamp="1589065202682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1589061976539">
+    <state width="1323" height="105" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589065202682" />
+    <state width="1323" height="105" key="GridCell.Tab.0.right" timestamp="1589065202682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.1.bottom" timestamp="1589061976539">
+    <state width="1323" height="105" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589065202682" />
+    <state width="1323" height="105" key="GridCell.Tab.1.bottom" timestamp="1589065202683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.1.center" timestamp="1589061976539">
+    <state width="1323" height="105" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589065202683" />
+    <state width="1323" height="105" key="GridCell.Tab.1.center" timestamp="1589065202682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.1.left" timestamp="1589061976539">
+    <state width="1323" height="105" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589065202682" />
+    <state width="1323" height="105" key="GridCell.Tab.1.left" timestamp="1589065202682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.1.right" timestamp="1589061976539">
+    <state width="1323" height="105" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589065202682" />
+    <state width="1323" height="105" key="GridCell.Tab.1.right" timestamp="1589065202682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.2.bottom" timestamp="1589061976540">
+    <state width="1323" height="105" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589065202682" />
+    <state width="1323" height="105" key="GridCell.Tab.2.bottom" timestamp="1589065202683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589061976540" />
-    <state width="1323" height="178" key="GridCell.Tab.2.center" timestamp="1589061976539">
+    <state width="1323" height="105" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589065202683" />
+    <state width="1323" height="105" key="GridCell.Tab.2.center" timestamp="1589065202683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.2.left" timestamp="1589061976539">
+    <state width="1323" height="105" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1589065202683" />
+    <state width="1323" height="105" key="GridCell.Tab.2.left" timestamp="1589065202683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
-    <state width="1323" height="178" key="GridCell.Tab.2.right" timestamp="1589061976540">
+    <state width="1323" height="105" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1589065202683" />
+    <state width="1323" height="105" key="GridCell.Tab.2.right" timestamp="1589065202683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1589061976540" />
+    <state width="1323" height="105" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1589065202683" />
     <state x="466" y="163" key="NewPhpClassDialog" timestamp="1589058408241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -736,27 +693,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>113</line>
+          <line>114</line>
           <option name="timeStamp" value="174" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>115</line>
+          <line>116</line>
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>118</line>
+          <line>119</line>
           <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>34</line>
+          <line>35</line>
           <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -766,7 +723,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>33</line>
+          <line>34</line>
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -971,8 +928,58 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>150</line>
+          <line>149</line>
           <option name="timeStamp" value="258" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>114</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>115</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>116</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>117</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>118</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>120</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>121</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>123</line>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>124</line>
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>125</line>
+          <option name="timeStamp" value="268" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Repository/ApiUserRepository.php</url>

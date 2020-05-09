@@ -92,8 +92,6 @@ S
 composer.json,3\9\3957b91a0d8450cea0115cfd5af69eac90d75897
 P
  templates/mailer/index.html.twig,7\f\7f072c3a763cb15bbff73d526ebfd73bfddff94e
-S
-#src/Form/forgotPasswordFormType.php,c\d\cdea660105e531675509930c33be134de8d63ec7
 I
 templates/error.html.twig,6\c\6cbba00fce4a371f16370836c024a8657053dd61
 J

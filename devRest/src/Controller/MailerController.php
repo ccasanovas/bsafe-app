@@ -31,9 +31,10 @@ class MailerController extends AbstractController
             // email address as a simple string
 
             $email->from($this->sender)
-            ->to($userEmail)
-            ->text('Solicitó un cambio de contraseña en su cuenta de BSafe')
-            ->html("<!doctype html>
+                ->subject('Recuperar contraseña')
+                ->to($userEmail)
+                ->text('Solicitó un cambio de contraseña en su cuenta de BSafe')
+                ->html("<!doctype html>
             <html lang='en-US'>
 
             <head>
@@ -58,7 +59,7 @@ class MailerController extends AbstractController
                     </tr>
                     <tr>
                         <td style='text-align:center;'>
-                          <a href='https://rakeshmandal.com' title='logo' target='_blank'>
+                          <a title='logo' target='_blank'>
                             <img width='60' src='https://bsafe.tepongoenred.com/uploads/icon.png' title='logo' alt='logo'>
                           </a>
                         </td>

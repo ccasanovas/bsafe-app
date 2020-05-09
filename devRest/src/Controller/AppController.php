@@ -136,32 +136,20 @@ class AppController extends AbstractController
         try {
             $email = $request->get('email');
             $password = $request->get('password');
-            $newPassword = $request->get('newPassword');
+            $newPassword = $apiUserController->generateUid($request->get('newPassword'));
             $entityUser = $this->apiUserRepository->findOneBy(['email' => $email]);
             if ($entityUser) {
                 $signIn = $firebaseController->loginToken($email, $password);
                 $entityToken = $this->apiUserPushRepository->findOneBy(['api_user_id' => $entityUser->getId()]);
-                $firebaseController->changeUserPassword($email, $newPassword, $signIn->accessToken());
+                $firebaseController->changeUserPassword($email, $newPassword, $signIn->idToken());
                 $this->apiUserPushRepository->updatePushTokens($signIn->refreshToken(), $entityToken);
-                $this->apiUserRepository->updateApiUserPassword($entityUser, $apiUserController->generateUid($newPassword));
+                $this->apiUserRepository->updateApiUserPassword($entityUser, $newPassword);
                 return $this->render('success.html.twig');
-
             }
         } catch (\Exception $e) {
             return $this->render('error.html.twig');
         }
+        return $this->render('error.html.twig');
     }
-
-    public function buildForm(FormBuilderInterface $builder, array $options)
-    {
-        $builder
-            ->add('task', TextType::class)
-            ->add('dueDate', DateType::class)
-            ->add('save', SubmitType::class)
-        ;
-    }
-
-
-
 
 }

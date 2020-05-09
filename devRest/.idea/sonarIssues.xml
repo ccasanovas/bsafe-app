@@ -3,6 +3,71 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/package-lock.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/package.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/platforms/android/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/platforms/android/app/src/main/res/xml/network_security_config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/plugins/android.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/resources/android/xml/network_security_config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/app/app.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/login/login.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/login/login.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/providers/auth-service/auth-service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/www/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/.env">
           <value>
             <set />
@@ -78,6 +143,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/Form/forgotPasswordFormType.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/Repository/ApiContactsRepository.php">
           <value>
             <set />
@@ -114,6 +184,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/templates/base.html.twig">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/templates/error.html.twig">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/templates/forgot.html.twig">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/templates/success.html.twig">
           <value>
             <set />
           </value>
@@ -164,6 +249,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../develop/repos/idata-users/vendor/symfony/error-handler/DebugClassLoader.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../frontApp/config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/res/xml/network_security_config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../frontApp/resources/android/xml/network_security_config.xml">
           <value>
             <set />
           </value>
@@ -609,6 +709,66 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xampp/htdocs/FormRecognizer-master/formRecognizerClass.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/composer.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/config/app.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/config/bootstrap.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/config/routes.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Administrator/OwnersAssociationsController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/AppController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/vendor/cakedc/auth/composer.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/vendor/cakedc/auth/src/Auth/RememberMeAuthenticate.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/vendor/cakephp/cakephp/src/Controller/Controller.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/vendor/cakephp/cakephp/src/Http/Server.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/nuevo/idata-infra-aws-cognito-plugin/composer.json">
           <value>
             <set />
           </value>

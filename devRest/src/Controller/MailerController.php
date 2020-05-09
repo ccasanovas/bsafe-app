@@ -8,6 +8,7 @@ use Ramsey\Uuid\Uuid;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Annotation\Route;
@@ -25,7 +26,7 @@ class MailerController extends AbstractController
 
     public function sendEmail($userEmail, $link)
     {
-        $url = "https://wecare.tepongoenred.com/getForgotPassword/".$userEmail."/".$link;
+        $url = "https://bsafe.tepongoenred.com/getForgotPassword/".$userEmail."/".$link;
         $email = (new Email());
             // email address as a simple string
 
@@ -58,7 +59,7 @@ class MailerController extends AbstractController
                     <tr>
                         <td style='text-align:center;'>
                           <a href='https://rakeshmandal.com' title='logo' target='_blank'>
-                            <img width='60' src='https://wecare.tepongoenred.com/uploads/icon.png' title='logo' alt='logo'>
+                            <img width='60' src='https://bsafe.tepongoenred.com/uploads/icon.png' title='logo' alt='logo'>
                           </a>
                         </td>
                     </tr>
@@ -118,4 +119,5 @@ class MailerController extends AbstractController
           'Email was sent'
       );
     }
+
 }

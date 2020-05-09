@@ -38,9 +38,9 @@ class ApiUserController extends AbstractController
         try {
             $user = $this->apiUserRepository->findOneBy(['email' => $newUserRequest->username()]);
             if (!$user) {
-                $user = $this->apiUserRepository->SaveUsers($newUserRequest->username(), $newUserRequest->password());
-                $firebaseController->createUser($newUserRequest->username(), $newUserRequest->password());
-                $token = $firebaseController->loginToken($newUserRequest->username(), $newUserRequest->password());
+                $user = $this->apiUserRepository->SaveUsers($newUserRequest->username(), $this->generateUid($newUserRequest->password()));
+                $firebaseController->createUser($newUserRequest->username(), $this->generateUid($newUserRequest->password()));
+                $token = $firebaseController->loginToken($newUserRequest->username(), $this->generateUid($newUserRequest->password()));
                 $this->apiUserPushRepository->SavePushTokens($user->getId(), $token->refreshToken());
                 return new JsonResponse([
                     'code' => 200,
@@ -66,11 +66,11 @@ class ApiUserController extends AbstractController
      */
     public function login(NewUserRequest $newUserRequest, FirebaseController $firebaseController)
     {
-        $user = $this->apiUserRepository->findOneBy(['email' => $newUserRequest->username(), 'password' => $newUserRequest->password()]);
+        $user = $this->apiUserRepository->findOneBy(['email' => $newUserRequest->username(), 'password' => $this->generateUid($newUserRequest->password())]);
         if ($user) {
             try {
                 $token = $this->apiUserPushRepository->findOneBy(['api_user_id' => $user->getId()]);
-                $signIn = $firebaseController->loginToken($newUserRequest->username(), $newUserRequest->password());
+                $signIn = $firebaseController->loginToken($newUserRequest->username(), $this->generateUid($newUserRequest->password()));
                 $this->apiUserPushRepository->updatePushTokens($signIn->refreshToken(), $token);
                     return new JsonResponse(
                         [   'code' => 200,
@@ -120,9 +120,9 @@ class ApiUserController extends AbstractController
         try {
             $user = $this->apiUserRepository->findOneBy(['email' => $verifiedToken->email]);
             $entityToken = $this->apiUserPushRepository->findOneBy(['api_user_id' => $user->getId()]);
-            $token = $firebaseController->changeUserPassword($user->getEmail(), $newUserRequest->newPassword(), $newUserRequest->push_token());
+            $token = $firebaseController->changeUserPassword($user->getEmail(), $this->generateUid($newUserRequest->newPassword()), $newUserRequest->push_token());
             $this->apiUserPushRepository->updatePushTokens($token->refreshToken(), $entityToken);
-            $this->apiUserRepository->updateApiUserPassword($user, $newUserRequest->newPassword());
+            $this->apiUserRepository->updateApiUserPassword($user, $this->generateUid($newUserRequest->newPassword()));
             return new JsonResponse([
                 'code' => 200,
                 'status' => 'Password editado exitosamente',
@@ -201,7 +201,7 @@ class ApiUserController extends AbstractController
         $user = $this->apiUserRepository->findOneBy(['email' => $newUserRequest->username()]);
         try{
         if ($user) {
-            $mailerController->sendEmail($user->getEmail(), $user->getPassword());
+            $mailerController->sendEmail($newUserRequest->username(), ($user->getPassword()));
             // $firebaseController->forgotPassword($newUserRequest->username(), $user->getPassword());
             return new JsonResponse([
                 'code' => 200,
@@ -219,6 +219,19 @@ class ApiUserController extends AbstractController
             'code' => 404,
             'status' => 'Su usuario no se encuentra registrado',
         ], Response::HTTP_NOT_FOUND);
+    }
+
+    function generateUid($data)
+    {
+        try {
+            $uuid = Uuid::uuid5(Uuid::NAMESPACE_URL, $data);
+            $shortUuid = new ShortUuid();
+            $password = $shortUuid->encode($uuid);
+            // Cognito requiere claves alfanumericas, por lo forzamos un 1 al final del string generado cuando no lo es.
+            return $password;
+        } catch (\Exception $e) {
+            throw new NotFoundHttpException('Uuid no se pudo resolver!');
+        }
     }
 
 }

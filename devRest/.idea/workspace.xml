@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b67c9e95-12de-40e7-8e5a-99540ddae346" name="Default Changelist" comment="" />
+    <list default="true" id="b67c9e95-12de-40e7-8e5a-99540ddae346" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/forgotPasswordFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/error.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/forgot.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/success.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/appRest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/appRest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09652a6497de0403bd2090e61381ced4d8bf7fe3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09652a6497de0403bd2090e61381ced4d8bf7fe3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/672f604204e0511f7f0ebf0638ff4f86bd1d3f01" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/672f604204e0511f7f0ebf0638ff4f86bd1d3f01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ApiUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ApiUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FirebaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FirebaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LocationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MailerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MailerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/.idea/sonarlint/issuestore/c/8/c88681139c6e4464bbd6995c6c25ac73afca920b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/.sourcemaps/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/node_modules/cordova-android/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/node_modules/cordova-android/node_modules/nopt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/node_modules/cordova-android/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/node_modules/cordova-android/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/CordovaLib/CordovaLib.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/android.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/build/vendor.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/assets/www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/app/src/main/res/xml/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/cordova/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/cordova/node_modules/nopt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/platform_www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/platform_www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/platforms/android/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/platforms/android/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/plugins/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/plugins/android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontApp/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../frontApp/www/build/vendor.js.map" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +83,9 @@
     <expand />
     <select />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="dc1e1a22-42ac-4e57-837a-b1199a8b47d9" name="AppRest" port="8000" use_path_mappings="true" />
@@ -141,9 +199,18 @@
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZYcE6UUWPcvaQEYxvLgN1ah39I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -151,8 +218,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/idata-suite" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunManager">
@@ -243,6 +311,11 @@
       <workItem from="1588452747542" duration="23383000" />
       <workItem from="1588540878557" duration="305000" />
       <workItem from="1588599020709" duration="249000" />
+      <workItem from="1588600252392" duration="5000000" />
+      <workItem from="1588792791142" duration="1701000" />
+      <workItem from="1588860329299" duration="9000" />
+      <workItem from="1588860371197" duration="168000" />
+      <workItem from="1589045330556" duration="14372000" />
     </task>
     <servers />
   </component>
@@ -266,10 +339,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586367431608" />
-    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588483092547">
+    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589050692733">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588483092547" />
+    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589050692733" />
     <state x="398" y="181" width="570" height="455" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1585066068030">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -278,58 +351,62 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="588" height="618" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1585074722984" />
-    <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1588488042305">
+    <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1589051377863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588488042305" />
-    <state width="1323" height="62" key="GridCell.Tab.0.bottom" timestamp="1588490877184">
+    <state x="463" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589051377863" />
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.0.center" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.0.left" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.0.right" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.1.bottom" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.1.bottom" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.1.center" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.1.center" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.1.left" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.1.left" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.1.right" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.1.right" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.2.bottom" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.2.bottom" timestamp="1589061976540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.2.center" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589061976540" />
+    <state width="1323" height="178" key="GridCell.Tab.2.center" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.2.left" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.2.left" timestamp="1589061976539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
-    <state width="1323" height="62" key="GridCell.Tab.2.right" timestamp="1588490877184">
+    <state width="1323" height="178" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1589061976539" />
+    <state width="1323" height="178" key="GridCell.Tab.2.right" timestamp="1589061976540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="62" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1588490877184" />
+    <state width="1323" height="178" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1589061976540" />
+    <state x="466" y="163" key="NewPhpClassDialog" timestamp="1589058408241">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="163" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1589058408241" />
     <state x="517" y="284" key="NewPhpFileDialog" timestamp="1585425390990">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -364,27 +441,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>34</line>
+          <line>27</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>50</line>
+          <line>43</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>67</line>
+          <line>60</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>68</line>
+          <line>61</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>69</line>
+          <line>62</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -444,37 +521,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>80</line>
+          <line>73</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>82</line>
+          <line>75</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>78</line>
+          <line>71</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>77</line>
+          <line>70</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>99</line>
+          <line>92</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>100</line>
+          <line>93</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>45</line>
+          <line>38</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -494,7 +571,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>44</line>
+          <line>37</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -584,27 +661,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>32</line>
+          <line>38</line>
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>34</line>
+          <line>40</line>
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>36</line>
+          <line>42</line>
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>45</line>
+          <line>51</line>
           <option name="timeStamp" value="152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>46</line>
+          <line>52</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -634,62 +711,62 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>58</line>
+          <line>64</line>
           <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>61</line>
+          <line>67</line>
           <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>88</line>
+          <line>81</line>
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>31</line>
+          <line>37</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/FirebaseController.php</url>
-          <line>121</line>
+          <line>114</line>
           <option name="timeStamp" value="168" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>112</line>
+          <line>113</line>
           <option name="timeStamp" value="174" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>114</line>
+          <line>115</line>
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>117</line>
+          <line>118</line>
           <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>33</line>
+          <line>34</line>
           <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>34</line>
+          <line>35</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>28</line>
+          <line>29</line>
           <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/MailerController.php</url>
-          <line>32</line>
+          <line>33</line>
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -848,9 +925,54 @@
           <option name="timeStamp" value="242" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/forgot.html.twig</url>
+          <line>125</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/forgot.html.twig</url>
+          <line>128</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/forgot.html.twig</url>
+          <line>130</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
-          <line>107</line>
-          <option name="timeStamp" value="247" />
+          <line>136</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>138</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>140</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>142</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>144</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>146</line>
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AppController.php</url>
+          <line>150</line>
+          <option name="timeStamp" value="258" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Repository/ApiUserRepository.php</url>
@@ -872,5 +994,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="index.php">
+        <watch expression="$decodedPassword-&gt;codec" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

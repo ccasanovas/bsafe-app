@@ -90,3 +90,13 @@ S
 #src/Controller/MailerController.php,f\d\fd8bf64d64048be82391a76a3596d29ce5d831b2
 =
 composer.json,3\9\3957b91a0d8450cea0115cfd5af69eac90d75897
+P
+ templates/mailer/index.html.twig,7\f\7f072c3a763cb15bbff73d526ebfd73bfddff94e
+S
+#src/Form/forgotPasswordFormType.php,c\d\cdea660105e531675509930c33be134de8d63ec7
+I
+templates/error.html.twig,6\c\6cbba00fce4a371f16370836c024a8657053dd61
+J
+templates/forgot.html.twig,b\e\beec93493181d42718807fca39e673250d666419
+K
+templates/success.html.twig,f\8\f8cecafefcb2f2f7c96b767c15dd3f82481682d2

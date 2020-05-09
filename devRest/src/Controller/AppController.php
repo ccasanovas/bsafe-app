@@ -6,10 +6,16 @@ use App\Entity\ApiUser;
 use App\Entity\ApiUserLocation;
 use App\Entity\ApiUserPushTokens;
 use App\Entity\FeedQuote;
+use App\Form\forgotPasswordFormType;
 use App\Validator\NewUserRequest;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Test\FormBuilderInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -101,10 +107,61 @@ class AppController extends AbstractController
     }
 
     /**
-     * @Route("/getPasswordForgotAction/{email}/{password}", name="api_user_getPasswordForgotAction", methods={"GET"})
+     * @Route("/getForgotPassword/{email}/{password}", name="api_user_getPasswordForgotAction")
      */
-    public function createNewPassword($email, $password, FirebaseController $firebaseController)
+    public function createNewPassword($email, $password)
     {
-        return new JsonResponse(['status' => 'ok']);
+        try {
+            $entityUser = $this->apiUserRepository->findBy(['email' => $email]);
+            if ($entityUser) {
+                return $this->render('forgot.html.twig',
+                    ['email' => $email,
+                        'password' => $password]);
+            }
+        } catch (\Exception $e){
+            return $this->render('error.html.twig');
+        }
+        return $this->render('error.html.twig',
+            ['email' => $email,
+                'password' => $password]);
     }
+
+    /**
+     * @Route("/formForgotPassword", name="api_user_formForgotPassword")
+     */
+    public function formForgotPassword(Request $request,
+                                       FirebaseController $firebaseController,
+                                       ApiUserController $apiUserController)
+    {
+        try {
+            $email = $request->get('email');
+            $password = $request->get('password');
+            $newPassword = $request->get('newPassword');
+            $entityUser = $this->apiUserRepository->findOneBy(['email' => $email]);
+            if ($entityUser) {
+                $signIn = $firebaseController->loginToken($email, $password);
+                $entityToken = $this->apiUserPushRepository->findOneBy(['api_user_id' => $entityUser->getId()]);
+                $firebaseController->changeUserPassword($email, $newPassword, $signIn->accessToken());
+                $this->apiUserPushRepository->updatePushTokens($signIn->refreshToken(), $entityToken);
+                $this->apiUserRepository->updateApiUserPassword($entityUser, $apiUserController->generateUid($newPassword));
+                return $this->render('success.html.twig');
+
+            }
+        } catch (\Exception $e) {
+            return $this->render('error.html.twig');
+        }
+    }
+
+    public function buildForm(FormBuilderInterface $builder, array $options)
+    {
+        $builder
+            ->add('task', TextType::class)
+            ->add('dueDate', DateType::class)
+            ->add('save', SubmitType::class)
+        ;
+    }
+
+
+
+
 }

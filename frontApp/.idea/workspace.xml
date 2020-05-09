@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e25fd42-eddf-4b78-98bd-647c61bb53dc" name="Default Changelist" comment="" />
+    <list default="true" id="9e25fd42-eddf-4b78-98bd-647c61bb53dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../devRest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../devRest/src/Form/forgotPasswordFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../devRest/templates/error.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../devRest/templates/forgot.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../devRest/templates/success.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/appRest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/appRest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/0/9/09652a6497de0403bd2090e61381ced4d8bf7fe3" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/0/9/09652a6497de0403bd2090e61381ced4d8bf7fe3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/6/7/672f604204e0511f7f0ebf0638ff4f86bd1d3f01" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/6/7/672f604204e0511f7f0ebf0638ff4f86bd1d3f01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/src/Controller/ApiUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/src/Controller/ApiUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/src/Controller/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/src/Controller/FirebaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/src/Controller/FirebaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/src/Controller/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/src/Controller/LocationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/src/Controller/MailerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/src/Controller/MailerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c88681139c6e4464bbd6995c6c25ac73afca920b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/nopt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-android/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-android/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/CordovaLib.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/android.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/vendor.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/vendor.js.map" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +71,11 @@
   <component name="FavoritesManager">
     <favorites_list name="App" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ZdgEDrFo0CB7uXN1UP2OMRiY6p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,8 +84,9 @@
   <component name="PropertiesComponent">
     <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$/platforms/android/app/build/outputs/apk/debug/app-debug.apk" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/devRest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -34,7 +95,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\ccasanovasgit\bsafe-app\frontApp\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ccasanovasgit\bsafe-app\frontApp\platforms\android\app\src\main\res\xml" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -128,6 +194,11 @@
       <workItem from="1588517743557" duration="861000" />
       <workItem from="1588539976162" duration="1206000" />
       <workItem from="1588599020878" duration="191000" />
+      <workItem from="1588636419189" duration="1055000" />
+      <workItem from="1588640671283" duration="20000" />
+      <workItem from="1588777897843" duration="12000" />
+      <workItem from="1588804053690" duration="2552000" />
+      <workItem from="1589048662534" duration="4553000" />
     </task>
     <servers />
   </component>
@@ -143,10 +214,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="464" y="155" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586821107883" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1588540872773">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1588640691506">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588540872773" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588640691506" />
     <state width="1323" height="149" key="GridCell.Tab.0.bottom" timestamp="1587794064941">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -167,10 +238,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="359" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586436786991" />
-    <state x="369" y="80" width="847" height="638" key="find.popup" timestamp="1587790740935">
+    <state x="369" y="80" width="847" height="638" key="find.popup" timestamp="1588804130572">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="369" y="80" width="847" height="638" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1587790740935" />
+    <state x="369" y="80" width="847" height="638" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1588804130572" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1587404894852">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -53,227 +53,232 @@
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/.env">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/package-lock.json">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/config/weCare.json">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/package.json">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/public/index.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/app/app.component.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Controller/ApiContactController.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/app/app.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Controller/ApiUserController.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/app/app.module.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Controller/AppController.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/app/app.scss">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Controller/FirebaseController.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/home/home.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Controller/LocationController.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/home/home.scss">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Controller/MailerController.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/home/home.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Entity/ApiUser.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/login/login.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Entity/ApiUserLocation.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/login/login.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Entity/ApiUserPushTokens.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/profile/profile.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Repository/ApiContactsRepository.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/profile/profile.scss">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Repository/ApiUserLocationRepository.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/register/register.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Repository/ApiUserPushTokensRepository.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/services/services.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Repository/ApiUserRepository.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/settings/settings.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/src/Validator/NewUserRequest.php">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/uploads/uploads.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/devRest/templates/base.html.twig">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/uploads/uploads.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/develop/repos/idata-users/.env">
+        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/theme/variables.scss">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/develop/repos/idata-users/config/services.yaml">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/config.xml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/develop/repos/idata-users/src/Controller/FirebaseController.php">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/app/app.component.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/develop/repos/idata-users/src/Controller/MailerController.php">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/app/app.module.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/develop/repos/idata-users/src/Controller/UsersController.php">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/about/about.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/develop/repos/idata-users/src/Controller/json">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/false-splash/false-splash.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/develop/repos/idata-users/vendor/symfony/error-handler/DebugClassLoader.php">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/false-splash/false-splash.scss">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/idata-infra-api-power/src/config/constants.php">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/false-splash/false-splash.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/idata-infra-api-power/src/config/settings.php">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/splash/splash.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/config/.env">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/splash/splash.scss">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/config/routes.php">
+        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/splash/splash.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Administrator/ApiUsersController.php">
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/config.xml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Administrator/NewsController.php">
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/resources/android/xml/network_security_config.xml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/AdministrationsController.php">
+        <entry key="$PROJECT_DIR$/../../app-jas/src/pages/document-details/document-details.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/FunctionalUnitsController.php">
+        <entry key="$PROJECT_DIR$/../../app-jas/src/pages/uploads/uploads.html">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/OwnersAssociationsController.php">
+        <entry key="$PROJECT_DIR$/../../app-jas/src/pages/uploads/uploads.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/PeriodsController.php">
+        <entry key="$PROJECT_DIR$/../devRest/.env">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/SettlementsController.php">
+        <entry key="$PROJECT_DIR$/../devRest/src/Controller/ApiUserController.php">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/S2s/V1/ApiUsersController.php">
+        <entry key="$PROJECT_DIR$/../devRest/src/Controller/AppController.php">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/S2s/V1/ExpensesNotificationsController.php">
+        <entry key="$PROJECT_DIR$/../devRest/src/Controller/FirebaseController.php">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/SesMailerController.php">
+        <entry key="$PROJECT_DIR$/../devRest/src/Controller/LocationController.php">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Superuser/ApiUsersController.php">
+        <entry key="$PROJECT_DIR$/../devRest/src/Controller/MailerController.php">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Model/Entity/ApiUser.php">
+        <entry key="$PROJECT_DIR$/../devRest/src/Form/forgotPasswordFormType.php">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Model/Table/NewsTable.php">
+        <entry key="$PROJECT_DIR$/../devRest/src/Repository/ApiUserRepository.php">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/src/Template/Administrator/ApiUsers/index.ctp">
+        <entry key="$PROJECT_DIR$/../devRest/templates/base.html.twig">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-core/vendor/evil-corp/cakephp-awscognito/src/Controller/Traits/AwsCognitoTrait.php">
+        <entry key="$PROJECT_DIR$/../devRest/templates/error.html.twig">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="C:/idata-suite/repos/suite-users/.env">
+        <entry key="$PROJECT_DIR$/../devRest/templates/forgot.html.twig">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../devRest/templates/success.html.twig">
           <value>
             <set />
           </value>
@@ -338,6 +343,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/network_security_config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/platforms/android/build.gradle">
           <value>
             <set />
@@ -354,6 +364,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/plugins/android.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/android/xml/network_security_config.xml">
           <value>
             <set />
           </value>
@@ -598,151 +613,6 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/package-lock.json">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/package.json">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/app/app.component.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/app/app.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/app/app.module.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/app/app.scss">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/home/home.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/home/home.scss">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/home/home.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/login/login.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/login/login.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/profile/profile.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/profile/profile.scss">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/register/register.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/services/services.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/settings/settings.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/uploads/uploads.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/pages/uploads/uploads.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../JasIonicApp/src/theme/variables.scss">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/config.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/app/app.component.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/app/app.module.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/about/about.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/false-splash/false-splash.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/false-splash/false-splash.scss">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/false-splash/false-splash.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/splash/splash.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/splash/splash.scss">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../api-dialogflow/src/pages/splash/splash.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/../../myApp/config.xml">
           <value>
             <set />
@@ -804,6 +674,241 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../ngClassRoomDialogFlow/src/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/.env">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/config/weCare.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/public/index.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Controller/ApiContactController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Controller/ApiUserController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Controller/AppController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Controller/FirebaseController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Controller/LocationController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Controller/MailerController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Entity/ApiUser.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Entity/ApiUserLocation.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Entity/ApiUserPushTokens.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Repository/ApiContactsRepository.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Repository/ApiUserLocationRepository.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Repository/ApiUserPushTokensRepository.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Repository/ApiUserRepository.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/src/Validator/NewUserRequest.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/devRest/templates/base.html.twig">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/develop/repos/idata-users/.env">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/develop/repos/idata-users/config/services.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/develop/repos/idata-users/src/Controller/FirebaseController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/develop/repos/idata-users/src/Controller/MailerController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/develop/repos/idata-users/src/Controller/UsersController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/develop/repos/idata-users/src/Controller/json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/develop/repos/idata-users/vendor/symfony/error-handler/DebugClassLoader.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/idata-infra-api-power/src/config/constants.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/idata-infra-api-power/src/config/settings.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/config/.env">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/config/bootstrap.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/config/routes.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Administrator/ApiUsersController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Administrator/NewsController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/AdministrationsController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/FunctionalUnitsController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/OwnersAssociationsController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/PeriodsController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Api/V1/SettlementsController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/S2s/V1/ApiUsersController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/S2s/V1/ExpensesNotificationsController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/SesMailerController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Controller/Superuser/ApiUsersController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Model/Entity/ApiUser.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Model/Table/NewsTable.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/src/Template/Administrator/ApiUsers/index.ctp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/vendor/cakephp/cakephp/src/TestSuite/IntegrationTestTrait.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-core/vendor/evil-corp/cakephp-awscognito/src/Controller/Traits/AwsCognitoTrait.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/idata-suite/repos/suite-users/.env">
           <value>
             <set />
           </value>

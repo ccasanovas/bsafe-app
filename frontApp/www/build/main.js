@@ -106,7 +106,7 @@ var AddcontactmodalPage = /** @class */ (function () {
     };
     AddcontactmodalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addcontactmodal',template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\addcontactmodal\addcontactmodal.html"*/'<!--\n  Generated template for the AddcontactmodalPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center">Agregar contacto</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="login-content" padding>\n  <div class="login-box">\n\n  <ion-row style="margin-top: 5%;">\n    <ion-col>\n      <ion-list inset>\n\n        <ion-item style="border: 2px solid #7f69a5; margin-bottom: 5%; background-color: #ffffff;  font-family: \'Roboto Light\'; font-weight: 400; font-size: 16px">\n          <ion-input type="text" placeholder="Nombre" [(ngModel)]="userPostData.name"   ></ion-input>\n        </ion-item>\n\n        <ion-item style="border: 2px solid #7f69a5; background-color: #ffffff; font-family: \'Roboto Light\'; font-weight: 400; font-size: 16px">\n          <ion-input type="tel" placeholder="Número de teléfono" [(ngModel)]="userPostData.phone_number"   ></ion-input>\n        </ion-item>\n        <ion-row style="margin-top: 5%; visibility: hidden;">\n        <ion-label style="font-family: \'Roboto\'; color: #f1f1f1; font-weight: 400; font-size: 14px" >¿Desea enviar una alerta vía whatsapp?</ion-label>\n          <ion-checkbox color="secondary" checked="false" [(ngModel)]="is_whatsapp.isChecked"></ion-checkbox>\n          <ion-input style="display: none;" type="hidden"  [(ngModel)]="userPostData.user_id"></ion-input>\n        </ion-row>\n      </ion-list>\n    </ion-col>\n  </ion-row>\n  </div>\n\n  <ion-fab  bottom right style="margin-right: 5%;">\n    <button class="ionFabClass" (click)="sendContactData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\addcontactmodal\addcontactmodal.html"*/,
+            selector: 'page-addcontactmodal',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\addcontactmodal\addcontactmodal.html"*/'<!--\n  Generated template for the AddcontactmodalPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center">Agregar contacto</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="login-content" padding>\n  <div class="login-box">\n\n  <ion-row style="margin-top: 5%;">\n    <ion-col>\n      <ion-list inset>\n\n        <ion-item style="border: 2px solid #7f69a5; margin-bottom: 5%; background-color: #ffffff;  font-family: \'Roboto Light\'; font-weight: 400; font-size: 16px">\n          <ion-input type="text" placeholder="Nombre" [(ngModel)]="userPostData.name"   ></ion-input>\n        </ion-item>\n\n        <ion-item style="border: 2px solid #7f69a5; background-color: #ffffff; font-family: \'Roboto Light\'; font-weight: 400; font-size: 16px">\n          <ion-input type="tel" placeholder="Número de teléfono" [(ngModel)]="userPostData.phone_number"   ></ion-input>\n        </ion-item>\n        <ion-row style="margin-top: 5%; visibility: hidden;">\n        <ion-label style="font-family: \'Roboto\'; color: #f1f1f1; font-weight: 400; font-size: 14px" >¿Desea enviar una alerta vía whatsapp?</ion-label>\n          <ion-checkbox color="secondary" checked="false" [(ngModel)]="is_whatsapp.isChecked"></ion-checkbox>\n          <ion-input style="display: none;" type="hidden"  [(ngModel)]="userPostData.user_id"></ion-input>\n        </ion-row>\n      </ion-list>\n    </ion-col>\n  </ion-row>\n  </div>\n\n  <ion-fab  bottom right style="margin-right: 5%;">\n    <button class="ionFabClass" (click)="sendContactData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\addcontactmodal\addcontactmodal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
@@ -121,6 +121,173 @@ var AddcontactmodalPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 109:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditprofilePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the EditprofilePage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var EditprofilePage = /** @class */ (function () {
+    function EditprofilePage(navCtrl, navParams, modalCtrl, viewCtrl, authService, menuCtrl, alertCtrl, loadingCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.menuCtrl = menuCtrl;
+        this.alertCtrl = alertCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.send_location = { isChecked: false };
+        this.userPostDataMessage = { "message": "",
+            "token": this.navParams.get('token'), "send_location": this.send_location, "username": this.navParams.get('username') };
+        this.userPostDataPassword = { "password": "", "newPassword": "", "newConfirmPassword": "",
+            "token": this.navParams.get('token'), "username": this.navParams.get('username') };
+        this.modalChangePassword = this.navParams.get('modalPassword');
+        this.modalChangeMessage = this.navParams.get('modalMessage');
+        this.menuCtrl.enable(false);
+    }
+    EditprofilePage.prototype.editMessageData = function () {
+        var _this = this;
+        var loader = this.loadingCtrl.create({
+            content: "Actualizando mensaje de emergencia"
+        });
+        loader.present();
+        if (this.userPostDataMessage.message
+            && this.userPostDataMessage.token) {
+            //Api connections
+            this.authService.postData(this.userPostDataMessage, "changeMessage").then(function (result) {
+                loader.dismiss();
+                _this.responseData = result;
+                if (_this.responseData.code == 200) {
+                    _this.dismissModal();
+                }
+            }).catch(function (err) {
+                console.log(err);
+                loader.dismiss();
+                if (err.status == 404) {
+                    var message = JSON.parse(err.error);
+                    _this.showalertData(message.status);
+                }
+                else {
+                    _this.showalertconnect();
+                }
+            });
+        }
+        else {
+            loader.dismiss();
+            this.showalertinfo();
+        }
+    };
+    EditprofilePage.prototype.showalertData = function (data) {
+        var alert = this.alertCtrl.create({
+            title: "Notificación",
+            subTitle: data,
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
+    EditprofilePage.prototype.editPasswordData = function () {
+        var _this = this;
+        var loader = this.loadingCtrl.create({
+            content: "Actualizando contraseña"
+        });
+        loader.present();
+        if (this.userPostDataPassword.newPassword
+            == this.userPostDataPassword.newConfirmPassword
+            && this.userPostDataPassword.token
+            && this.userPostDataPassword.newConfirmPassword.length > 5
+            && this.userPostDataPassword.newPassword.length > 5) {
+            //Api connections
+            this.authService.postData(this.userPostDataPassword, "changePassword").then(function (result) {
+                loader.dismiss();
+                _this.responseData = result;
+                if (_this.responseData.code == 200) {
+                    console.log(_this.responseData);
+                    _this.dismissModal();
+                }
+            }).catch(function (err) {
+                loader.dismiss();
+                if (err.status == 404) {
+                    var message = JSON.parse(err.error);
+                    _this.showalertData(message.status);
+                }
+                else {
+                    _this.showalertconnect();
+                }
+            });
+        }
+        else {
+            loader.dismiss();
+            this.showalertPassword();
+        }
+    };
+    EditprofilePage.prototype.showalertPassword = function () {
+        var alert = this.alertCtrl.create({
+            title: "Notificación",
+            subTitle: "Verifique que su nuevo password tenga más de 5 caractéres y ambos campos coincidan",
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
+    EditprofilePage.prototype.showalertinfo = function () {
+        var alert = this.alertCtrl.create({
+            title: "Notificación",
+            subTitle: "Por favor complete su mensaje de emergencia",
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
+    EditprofilePage.prototype.showalertconnect = function () {
+        var alert = this.alertCtrl.create({
+            title: "Notificación",
+            subTitle: "Ha fallado la conexión",
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
+    EditprofilePage.prototype.dismissModal = function () {
+        var result = "cerrando modal";
+        this.viewCtrl.dismiss(result);
+    };
+    EditprofilePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad EditprofilePage');
+    };
+    EditprofilePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-editprofile',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\editprofile\editprofile.html"*/'<!--\n  Generated template for the EditprofilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header *ngIf="modalChangeMessage" >\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Editar mensaje</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="modalChangeMessage"  class="login-content" padding>\n\n  <ion-card style="margin-top: 5%;">\n    <ion-card-header>\n      <ion-grid >\n        <ion-row>\n          <ion-item>\n            <ion-textarea placeholder="Ingrese su mensaje de emergencia aquí"  [(ngModel)]="userPostDataMessage.message"></ion-textarea>\n          </ion-item>\n        </ion-row>\n\n      </ion-grid>\n    </ion-card-header>\n\n  </ion-card>\n  <ion-row style="margin-top: 5%; visibility: hidden;">\n    <ion-label style="font-family: \'Roboto\'; color: #f1f1f1; font-weight: 400; font-size: 14px; width: 75%" >¿Desea enviar su ubicación <br> en el mensaje de emergencia?</ion-label>\n    <ion-checkbox style="margin-right: 15%"  color="secondary" checked="false" [(ngModel)]="send_location.isChecked"></ion-checkbox>\n  </ion-row>\n  <!-- Textarea in an item with a placeholder -->\n\n\n\n  <ion-fab  bottom right style="margin-right: 5%;">\n    <button class="ionFabClass" (click)="editMessageData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n\n\n\n<ion-header *ngIf="modalChangePassword" >\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Editar contraseña</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="modalChangePassword" class="login-content" padding>\n\n  <div class="login-box" style="margin-top: 5%">\n    <ion-row>\n      <ion-col>\n        <ion-list inset>\n          <ion-item style="background-color: #f1f1f1; margin-top: 4%; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">\n            <ion-input type="password" placeholder="Contraseña nueva"  [(ngModel)]="userPostDataPassword.newPassword" ></ion-input>\n          </ion-item>\n          <ion-item style="background-color: #f1f1f1; margin-top: 4%; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">\n            <ion-input type="password" placeholder="Confirmar contraseña"  [(ngModel)]="userPostDataPassword.newConfirmPassword" ></ion-input>\n          </ion-item>\n\n        </ion-list>\n      </ion-col>\n    </ion-row>\n\n  </div>\n  <!-- Textarea in an item with a placeholder -->\n\n\n\n  <ion-fab  bottom right style="margin-right: 5%; ">\n    <button class="ionFabClass" (click)="editPasswordData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\editprofile\editprofile.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
+    ], EditprofilePage);
+    return EditprofilePage;
+}());
+
+//# sourceMappingURL=editprofile.js.map
+
+/***/ }),
+
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -328,7 +495,7 @@ var ContactsPage = /** @class */ (function () {
     };
     ContactsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-account',template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\contacts\contacts.html"*/'<ion-header>\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Mis contactos</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content fullscreen >\n  <br><br>\n\n  <ion-list *ngFor="let item of (contactsData || []);">\n    <ion-card>\n      <ion-item>\n        <ion-avatar item-left><img src="https://cdn.pixabay.com/photo/2016/03/31/14/47/avatar-1292817_960_720.png" style="width: 34px; height: 38px;">\n        </ion-avatar>\n        <span style="font-family: \'Roboto\'">{{item.name}}</span><br>\n        <span style="font-family: \'Roboto\'; font-size: 12px">{{item.phone_number}}</span>\n        <button ion-button style="background-color: #f30d0d; font-family: \'Roboto\'" (click)="presentAlert(item.phone_number)" item-right>+ Borrar</button>\n      </ion-item>\n    </ion-card>\n  </ion-list>\n  <ion-fab bottom right style="margin-right: 5%">\n      <button (click)="presentModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="add"></ion-icon></button>\n    </ion-fab>\n  </ion-content>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\contacts\contacts.html"*/,
+            selector: 'page-account',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\contacts\contacts.html"*/'<ion-header>\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Mis contactos</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content fullscreen >\n  <br><br>\n\n  <ion-list *ngFor="let item of (contactsData || []);">\n    <ion-card>\n      <ion-item>\n        <ion-avatar item-left><img src="https://cdn.pixabay.com/photo/2016/03/31/14/47/avatar-1292817_960_720.png" style="width: 34px; height: 38px;">\n        </ion-avatar>\n        <span style="font-family: \'Roboto\'">{{item.name}}</span><br>\n        <span style="font-family: \'Roboto\'; font-size: 12px">{{item.phone_number}}</span>\n        <button ion-button style="background-color: #f30d0d; font-family: \'Roboto\'" (click)="presentAlert(item.phone_number)" item-right>+ Borrar</button>\n      </ion-item>\n    </ion-card>\n  </ion-list>\n  <ion-fab bottom right style="margin-right: 5%">\n      <button (click)="presentModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="add"></ion-icon></button>\n    </ion-fab>\n  </ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\contacts\contacts.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
     ], ContactsPage);
@@ -336,173 +503,6 @@ var ContactsPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=contacts.js.map
-
-/***/ }),
-
-/***/ 110:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditprofilePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(17);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the EditprofilePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var EditprofilePage = /** @class */ (function () {
-    function EditprofilePage(navCtrl, navParams, modalCtrl, viewCtrl, authService, menuCtrl, alertCtrl, loadingCtrl) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-        this.viewCtrl = viewCtrl;
-        this.authService = authService;
-        this.menuCtrl = menuCtrl;
-        this.alertCtrl = alertCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.send_location = { isChecked: false };
-        this.userPostDataMessage = { "message": "",
-            "token": this.navParams.get('token'), "send_location": this.send_location, "username": this.navParams.get('username') };
-        this.userPostDataPassword = { "password": "", "newPassword": "", "newConfirmPassword": "",
-            "token": this.navParams.get('token'), "username": this.navParams.get('username') };
-        this.modalChangePassword = this.navParams.get('modalPassword');
-        this.modalChangeMessage = this.navParams.get('modalMessage');
-        this.menuCtrl.enable(false);
-    }
-    EditprofilePage.prototype.editMessageData = function () {
-        var _this = this;
-        var loader = this.loadingCtrl.create({
-            content: "Actualizando mensaje de emergencia"
-        });
-        loader.present();
-        if (this.userPostDataMessage.message
-            && this.userPostDataMessage.token) {
-            //Api connections
-            this.authService.postData(this.userPostDataMessage, "changeMessage").then(function (result) {
-                loader.dismiss();
-                _this.responseData = result;
-                if (_this.responseData.code == 200) {
-                    _this.dismissModal();
-                }
-            }).catch(function (err) {
-                console.log(err);
-                loader.dismiss();
-                if (err.status == 404) {
-                    var message = JSON.parse(err.error);
-                    _this.showalertData(message.status);
-                }
-                else {
-                    _this.showalertconnect();
-                }
-            });
-        }
-        else {
-            loader.dismiss();
-            this.showalertinfo();
-        }
-    };
-    EditprofilePage.prototype.showalertData = function (data) {
-        var alert = this.alertCtrl.create({
-            title: "Notificación",
-            subTitle: data,
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
-    EditprofilePage.prototype.editPasswordData = function () {
-        var _this = this;
-        var loader = this.loadingCtrl.create({
-            content: "Actualizando contraseña"
-        });
-        loader.present();
-        if (this.userPostDataPassword.newPassword
-            == this.userPostDataPassword.newConfirmPassword
-            && this.userPostDataPassword.token
-            && this.userPostDataPassword.newConfirmPassword.length > 5
-            && this.userPostDataPassword.newPassword.length > 5) {
-            //Api connections
-            this.authService.postData(this.userPostDataPassword, "changePassword").then(function (result) {
-                loader.dismiss();
-                _this.responseData = result;
-                if (_this.responseData.code == 200) {
-                    console.log(_this.responseData);
-                    _this.dismissModal();
-                }
-            }).catch(function (err) {
-                loader.dismiss();
-                if (err.status == 404) {
-                    var message = JSON.parse(err.error);
-                    _this.showalertData(message.status);
-                }
-                else {
-                    _this.showalertconnect();
-                }
-            });
-        }
-        else {
-            loader.dismiss();
-            this.showalertPassword();
-        }
-    };
-    EditprofilePage.prototype.showalertPassword = function () {
-        var alert = this.alertCtrl.create({
-            title: "Notificación",
-            subTitle: "Verifique que su nuevo password tenga más de 5 caractéres y ambos campos coincidan",
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
-    EditprofilePage.prototype.showalertinfo = function () {
-        var alert = this.alertCtrl.create({
-            title: "Notificación",
-            subTitle: "Por favor complete su mensaje de emergencia",
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
-    EditprofilePage.prototype.showalertconnect = function () {
-        var alert = this.alertCtrl.create({
-            title: "Notificación",
-            subTitle: "Ha fallado la conexión",
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
-    EditprofilePage.prototype.dismissModal = function () {
-        var result = "cerrando modal";
-        this.viewCtrl.dismiss(result);
-    };
-    EditprofilePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad EditprofilePage');
-    };
-    EditprofilePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-editprofile',template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\editprofile\editprofile.html"*/'<!--\n  Generated template for the EditprofilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header *ngIf="modalChangeMessage" >\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Editar mensaje</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="modalChangeMessage"  class="login-content" padding>\n\n  <ion-card style="margin-top: 5%;">\n    <ion-card-header>\n      <ion-grid >\n        <ion-row>\n          <ion-item>\n            <ion-textarea placeholder="Ingrese su mensaje de emergencia aquí"  [(ngModel)]="userPostDataMessage.message"></ion-textarea>\n          </ion-item>\n        </ion-row>\n\n      </ion-grid>\n    </ion-card-header>\n\n  </ion-card>\n  <ion-row style="margin-top: 5%; visibility: hidden;">\n    <ion-label style="font-family: \'Roboto\'; color: #f1f1f1; font-weight: 400; font-size: 14px; width: 75%" >¿Desea enviar su ubicación <br> en el mensaje de emergencia?</ion-label>\n    <ion-checkbox style="margin-right: 15%"  color="secondary" checked="false" [(ngModel)]="send_location.isChecked"></ion-checkbox>\n  </ion-row>\n  <!-- Textarea in an item with a placeholder -->\n\n\n\n  <ion-fab  bottom right style="margin-right: 5%;">\n    <button class="ionFabClass" (click)="editMessageData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n\n\n\n<ion-header *ngIf="modalChangePassword" >\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Editar contraseña</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="modalChangePassword" class="login-content" padding>\n\n  <div class="login-box" style="margin-top: 5%">\n    <ion-row>\n      <ion-col>\n        <ion-list inset>\n          <ion-item style="background-color: #f1f1f1; margin-top: 4%; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">\n            <ion-input type="password" placeholder="Contraseña nueva"  [(ngModel)]="userPostDataPassword.newPassword" ></ion-input>\n          </ion-item>\n          <ion-item style="background-color: #f1f1f1; margin-top: 4%; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">\n            <ion-input type="password" placeholder="Confirmar contraseña"  [(ngModel)]="userPostDataPassword.newConfirmPassword" ></ion-input>\n          </ion-item>\n\n        </ion-list>\n      </ion-col>\n    </ion-row>\n\n  </div>\n  <!-- Textarea in an item with a placeholder -->\n\n\n\n  <ion-fab  bottom right style="margin-right: 5%; ">\n    <button class="ionFabClass" (click)="editPasswordData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\editprofile\editprofile.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
-    ], EditprofilePage);
-    return EditprofilePage;
-}());
-
-//# sourceMappingURL=editprofile.js.map
 
 /***/ }),
 
@@ -514,7 +514,7 @@ var EditprofilePage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__editprofile_editprofile__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__editprofile_editprofile__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_transfer__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_camera__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_file__ = __webpack_require__(172);
@@ -843,7 +843,7 @@ var MyprofilePage = /** @class */ (function () {
     };
     MyprofilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-myprofile',template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\myprofile\myprofile.html"*/'<ion-header>\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center">Mi perfil</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content has-header="true" >\n\n  <div id="profile-bg"></div>\n  <div id="content">\n    <div *ngIf="feedDataSet" id="profile-info">\n      <img  id="profile-image"  src="https://bsafe.tepongoenred.com/uploads/{{feedDataSet.avatar}}">\n      <button (click)="presentActionSheet()" id="addProfilePicture">+</button>\n      <h5 id="profile-name">{{userDetails.username}}</h5>\n    </div>\n    <ion-list>\n      <ion-item>\n        <ion-buttons>\n          <button style="font-family: \'Roboto\'; font-weight: 400; font-size: 16px" ion-button class="submit-btn" (click)="presentModalPassword()" full>Cambiar contraseña</button>\n          <button style="font-family: \'Roboto\'; font-weight: 400; font-size: 16px" ion-button class="submit-btn" (click)="presentModalMessage()" full>Editar mensaje de emergencia</button>\n          <button style="font-family: \'Roboto\'; font-weight: 400; font-size: 16px;"  color="danger" ion-button (click)="presentAlertLogOut()" full >Cerrar sesión</button>\n\n        </ion-buttons>\n      </ion-item>\n    </ion-list>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\myprofile\myprofile.html"*/,
+            selector: 'page-myprofile',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\myprofile\myprofile.html"*/'<ion-header>\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center">Mi perfil</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content has-header="true" >\n\n  <div id="profile-bg"></div>\n  <div id="content">\n    <div *ngIf="feedDataSet" id="profile-info">\n      <img  id="profile-image"  src="https://bsafe.tepongoenred.com/uploads/{{feedDataSet.avatar}}">\n      <button (click)="presentActionSheet()" id="addProfilePicture">+</button>\n      <h5 id="profile-name">{{userDetails.username}}</h5>\n    </div>\n    <ion-list>\n      <ion-item>\n        <ion-buttons>\n          <button style="font-family: \'Roboto\'; font-weight: 400; font-size: 16px" ion-button class="submit-btn" (click)="presentModalPassword()" full>Cambiar contraseña</button>\n          <button style="font-family: \'Roboto\'; font-weight: 400; font-size: 16px" ion-button class="submit-btn" (click)="presentModalMessage()" full>Editar mensaje de emergencia</button>\n          <button style="font-family: \'Roboto\'; font-weight: 400; font-size: 16px;"  color="danger" ion-button (click)="presentAlertLogOut()" full >Cerrar sesión</button>\n\n        </ion-buttons>\n      </ion-item>\n    </ion-list>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\myprofile\myprofile.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
@@ -893,11 +893,11 @@ var map = {
 		6
 	],
 	"../pages/contacts/contacts.module": [
-		293,
+		294,
 		5
 	],
 	"../pages/editprofile/editprofile.module": [
-		294,
+		293,
 		4
 	],
 	"../pages/forgot-password/forgot-password.module": [
@@ -1022,10 +1022,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_tabs_tabs__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_contacts_contacts__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_contacts_contacts__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_addcontactmodal_addcontactmodal__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_myprofile_myprofile__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_editprofile_editprofile__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_editprofile_editprofile__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_sms__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_camera__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_file_transfer__ = __webpack_require__(170);
@@ -1093,8 +1093,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/addcontactmodal/addcontactmodal.module#AddcontactmodalPageModule', name: 'AddcontactmodalPage', segment: 'addcontactmodal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/contacts/contacts.module#ContactsPageModule', name: 'ContactsPage', segment: 'contacts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/editprofile/editprofile.module#EditprofilePageModule', name: 'EditprofilePage', segment: 'editprofile', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/contacts/contacts.module#ContactsPageModule', name: 'ContactsPage', segment: 'contacts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/forgot-password/forgot-password.module#ForgotPasswordPageModule', name: 'ForgotPasswordPage', segment: 'forgot-password', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/myprofile/myprofile.module#MyprofilePageModule', name: 'MyprofilePage', segment: 'myprofile', priority: 'low', defaultHistory: [] },
@@ -1252,7 +1252,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\app\app.html"*/'\n\n  <!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n  <ion-nav  [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\app\app.html"*/'\n\n  <!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n  <ion-nav  [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
@@ -1380,7 +1380,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\login\login.html"*/'<ion-content style="background-color: #6a5085">\n\n  <div class="login-form">\n    <ion-row class="logo-row">\n\n    <ion-col></ion-col>\n    <ion-col>\n      <img src="./assets/img/logo.png"/>\n    </ion-col>\n    <ion-col></ion-col>\n    </ion-row>\n\n    <h1 text-center>Bienvenida</h1>\n      <div class="content">\n        <div class="input-field">\n          <ion-input type="email" placeholder="Email"  [(ngModel)]="userData.username"></ion-input>\n        </div>\n        <div class="input-field">\n          <ion-input type="password" placeholder="Contraseña"  [(ngModel)]="userData.password" ></ion-input>\n        </div>\n        <a (click)="onforgot()" class="link">Olvido su contraseña?</a>\n      </div>\n      <div class="action">\n        <button (click)="onregister()">Registrarse</button>\n        <button (click)="login()" style="background-color:#6a5085" >Iniciar sesión</button>\n      </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\login\login.html"*/'<ion-content style="background-color: #6a5085">\n\n  <div class="login-form">\n    <ion-row class="logo-row">\n\n    <ion-col></ion-col>\n    <ion-col>\n      <img src="./assets/img/logo.png"/>\n    </ion-col>\n    <ion-col></ion-col>\n    </ion-row>\n\n    <h1 text-center>Bienvenida</h1>\n      <div class="content">\n        <div class="input-field">\n          <ion-input type="email" placeholder="Email"  [(ngModel)]="userData.username"></ion-input>\n        </div>\n        <div class="input-field">\n          <ion-input type="password" placeholder="Contraseña"  [(ngModel)]="userData.password" ></ion-input>\n        </div>\n        <a (click)="onforgot()" class="link">Olvido su contraseña?</a>\n      </div>\n      <div class="action">\n        <button (click)="onregister()">Registrarse</button>\n        <button (click)="login()" style="background-color:#6a5085" >Iniciar sesión</button>\n      </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
@@ -1402,7 +1402,7 @@ var LoginPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_contacts__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_contacts__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__myprofile_myprofile__ = __webpack_require__(111);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1439,7 +1439,7 @@ var TabsPage = /** @class */ (function () {
     }
     TabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tabs',template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\tabs\tabs.html"*/'\n<ion-tabs>\n  <ion-tab [root]="tab2Root"  tabTitle="Mi perfil" tabIcon="person"></ion-tab>\n  <ion-tab [root]="tab1Root" tabTitle="Inicio" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contactos" tabIcon="person-add"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\tabs\tabs.html"*/
+            selector: 'page-tabs',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\tabs\tabs.html"*/'\n<ion-tabs>\n  <ion-tab [root]="tab2Root"  tabTitle="Mi perfil" tabIcon="person"></ion-tab>\n  <ion-tab [root]="tab1Root" tabTitle="Inicio" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contactos" tabIcon="person-add"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */]])
     ], TabsPage);
@@ -1566,7 +1566,7 @@ var ForgotPasswordPage = /** @class */ (function () {
     };
     ForgotPasswordPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-forgot-password',template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\forgot-password\forgot-password.html"*/'<ion-content style="background-color: #6a5085">\n\n  <div class="login-form">\n    <ion-row class="logo-row">\n      <ion-col></ion-col>\n      <ion-col>\n        <img src="./assets/img/logo.png"/>\n      </ion-col>\n      <ion-col></ion-col>\n    </ion-row>\n    <h1 text-center>Recordar contraseña</h1>\n    <div class="content">\n      <div class="input-field">\n        <ion-input type="text" placeholder="Email" [(ngModel)]="userPostData.username"></ion-input>\n      </div>\n      <a (click)="onloginroot()" class="link">Iniciar sesión</a>\n    </div>\n    <div class="action">\n      <button  (click)="onlogin()">Volver</button>\n      <button style="background-color: #6a5085" (click)="forgotPassword()">Enviar link</button>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\forgot-password\forgot-password.html"*/,
+            selector: 'page-forgot-password',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\forgot-password\forgot-password.html"*/'<ion-content style="background-color: #6a5085">\n\n  <div class="login-form">\n    <ion-row class="logo-row">\n      <ion-col></ion-col>\n      <ion-col>\n        <img src="./assets/img/logo.png"/>\n      </ion-col>\n      <ion-col></ion-col>\n    </ion-row>\n    <h1 text-center>Recordar contraseña</h1>\n    <div class="content">\n      <div class="input-field">\n        <ion-input type="text" placeholder="Email" [(ngModel)]="userPostData.username"></ion-input>\n      </div>\n      <a (click)="onloginroot()" class="link">Iniciar sesión</a>\n    </div>\n    <div class="action">\n      <button  (click)="onlogin()">Volver</button>\n      <button style="background-color: #6a5085" (click)="forgotPassword()">Enviar link</button>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\forgot-password\forgot-password.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
@@ -1690,7 +1690,7 @@ var RegisterPage = /** @class */ (function () {
     };
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\register\register.html"*/'<ion-content style="background-color: #6a5085" >\n\n  <div class="login-form">\n    <ion-row class="logo-row">\n\n      <ion-col></ion-col>\n      <ion-col>\n        <img src="./assets/img/logo.png"/>\n      </ion-col>\n      <ion-col></ion-col>\n    </ion-row>\n    <h1 text-center>Registrarse</h1>\n    <div class="content">\n      <div class="input-field">\n        <ion-input type="email" placeholder="Email"  [(ngModel)]="userData.username"></ion-input>\n      </div>\n      <div class="input-field">\n        <ion-input type="password" placeholder="Contraseña"  [(ngModel)]="userData.password" ></ion-input>\n      </div>\n      <div class="input-field">\n        <ion-input type="password" placeholder="Confirmar contraseña"  [(ngModel)]="userData.confirm_password" ></ion-input>\n      </div>\n      <a (click)="onforgot()" class="link">Olvido su contraseña?</a>\n    </div>\n    <div class="action">\n      <button  (click)="onlogin()">Volver</button>\n      <button style="background-color:#6a5085" (click)="signup()">Registrarse</button>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\register\register.html"*/,
+            selector: 'page-register',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\register\register.html"*/'<ion-content style="background-color: #6a5085" >\n\n  <div class="login-form">\n    <ion-row class="logo-row">\n\n      <ion-col></ion-col>\n      <ion-col>\n        <img src="./assets/img/logo.png"/>\n      </ion-col>\n      <ion-col></ion-col>\n    </ion-row>\n    <h1 text-center>Registrarse</h1>\n    <div class="content">\n      <div class="input-field">\n        <ion-input type="email" placeholder="Email"  [(ngModel)]="userData.username"></ion-input>\n      </div>\n      <div class="input-field">\n        <ion-input type="password" placeholder="Contraseña"  [(ngModel)]="userData.password" ></ion-input>\n      </div>\n      <div class="input-field">\n        <ion-input type="password" placeholder="Confirmar contraseña"  [(ngModel)]="userData.confirm_password" ></ion-input>\n      </div>\n      <a (click)="onforgot()" class="link">Olvido su contraseña?</a>\n    </div>\n    <div class="action">\n      <button  (click)="onlogin()">Volver</button>\n      <button style="background-color:#6a5085" (click)="signup()">Registrarse</button>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\register\register.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */],
@@ -2031,7 +2031,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar class="login-content">\n  <ion-buttons left menuToggle>\n    <button ion-button icon-only>\n      <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n    </button>\n  </ion-buttons>\n  <ion-title style="text-align:center; font-family: \'Roboto\'">Inicio</ion-title>\n  </ion-navbar>\n  </ion-header>\n\n<ion-content  no-padding no-margin>\n    <ion-card id="content" *ngIf="feedDataSet != null">\n      <ion-avatar id="profile-info">\n        <img id="profile-image" src="https://cdn.pixabay.com/photo/2018/05/15/17/46/frida-3403761_960_720.jpg">\n      </ion-avatar>\n        <ion-card-content id="quote">\n          <h3 style="color: #f1f1f1; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">{{feedDataSet.quote}}\n            <h6 style="color: #f1f1f1; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">{{feedDataSet.author}}</h6></h3>\n        </ion-card-content>\n\n    </ion-card>\n  <!-- fab placed to the bottom start -->\n  <ion-fab bottom center>\n    <button (click)="sendSOSAlert()" ion-fab color="danger">SOS</button>\n  </ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"C:\panic\Ionic3-Php-Rest-API-Address-Book-master\App\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar class="login-content">\n  <ion-buttons left menuToggle>\n    <button ion-button icon-only>\n      <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n    </button>\n  </ion-buttons>\n  <ion-title style="text-align:center; font-family: \'Roboto\'">Inicio</ion-title>\n  </ion-navbar>\n  </ion-header>\n\n<ion-content  no-padding no-margin>\n    <ion-card id="content" *ngIf="feedDataSet != null">\n      <ion-avatar id="profile-info">\n        <img id="profile-image" src="https://cdn.pixabay.com/photo/2018/05/15/17/46/frida-3403761_960_720.jpg">\n      </ion-avatar>\n        <ion-card-content id="quote">\n          <h3 style="color: #f1f1f1; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">{{feedDataSet.quote}}\n            <h6 style="color: #f1f1f1; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">{{feedDataSet.author}}</h6></h3>\n        </ion-card-content>\n\n    </ion-card>\n  <!-- fab placed to the bottom start -->\n  <ion-fab bottom center>\n    <button (click)="sendSOSAlert()" ion-fab color="danger">SOS</button>\n  </ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],

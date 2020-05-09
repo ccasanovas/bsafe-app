@@ -11,6 +11,10 @@
       "ANDROID_SUPPORT_VERSION": "26.+",
       "PACKAGE_NAME": "com.ionicframework.BSafePanicButton"
     },
+    "cordova-plugin-advanced-http": {
+      "OKHTTP_VERSION": "3.10.0",
+      "PACKAGE_NAME": "com.ionicframework.BSafePanicButton"
+    },
     "cordova-plugin-android-permissions": {
       "PACKAGE_NAME": "com.ionicframework.BSafePanicButton"
     },
@@ -67,10 +71,6 @@
       "PACKAGE_NAME": "com.ionicframework.BSafePanicButton"
     },
     "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.ionicframework.BSafePanicButton"
-    },
-    "cordova-plugin-advanced-http": {
-      "OKHTTP_VERSION": "3.10.0",
       "PACKAGE_NAME": "com.ionicframework.BSafePanicButton"
     }
   },

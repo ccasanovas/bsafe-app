@@ -47,7 +47,7 @@ class LocationController extends AbstractController
             return new JsonResponse([
                 'code' => 404,
                 'status' => 'Hubo un error actualizando la ubicación',
-                'location' => json_encode($data)], Response::HTTP_NOT_FOUND);
+                'location' => $e->getMessage()], Response::HTTP_NOT_FOUND);
             }
     }
 

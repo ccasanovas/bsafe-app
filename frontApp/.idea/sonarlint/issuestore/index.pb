@@ -102,8 +102,6 @@ b
 2platforms/android/app/src/main/AndroidManifest.xml,5\5\551108716958d86fbe294231700dcb7fe04f4495
 ;
 tslint.json,f\e\fe0ea8c642bdcc721c7c5a4177c93a0ab7f7ef68
-M
-platforms/android/android.iml,c\8\c88681139c6e4464bbd6995c6c25ac73afca920b
 a
 1platforms/android/app/src/main/res/xml/config.xml,8\6\86c783adb76aa5fe61ed6efd1a7a95dc8e697228
 =
@@ -130,3 +128,7 @@ Splatforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.
 ,src/pages/forgot-password/forgot-password.ts,4\1\4188941b71e57545e99ead5a8b8a8683df777816
 c
 3src/pages/forgot-password/forgot-password.module.ts,f\c\fccac0ae663c937ff303d38c8d13b5d20267aef2
+r
+Bplatforms/android/app/src/main/res/xml/network_security_config.xml,5\6\5603342a46a9a9dc187e706093e3498096caa4c7
+a
+1resources/android/xml/network_security_config.xml,4\6\4621959e15fb08855293e4d91fb4d11c9726f36d

@@ -4,21 +4,14 @@ namespace App\Controller;
 
 use App\Entity\ApiUser;
 use App\Entity\ApiUserPushTokens;
-use App\Validator\NewUserRequest;
-use Doctrine\Common\Cache\FilesystemCache;
 use Doctrine\ORM\EntityManagerInterface;
-use http\Env\Request;
 use Kreait\Firebase\Auth;
 use Kreait\Firebase\Exception\AuthException;
 use Kreait\Firebase\Exception\FirebaseException;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
-use Ramsey\Uuid\Uuid;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use PascalDeVink\ShortUuid\ShortUuid;
-use Kreait\Firebase\Factory;
+use Ramsey\Uuid\Uuid;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class FirebaseController extends AbstractController
 {

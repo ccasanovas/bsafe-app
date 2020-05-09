@@ -2,6 +2,9 @@
     "aferrandini/urlizer": {
         "version": "1.0.0"
     },
+    "brick/math": {
+        "version": "0.8.15"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -213,6 +216,9 @@
     "ralouphie/getallheaders": {
         "version": "3.0.3"
     },
+    "ramsey/collection": {
+        "version": "1.0.1"
+    },
     "ramsey/uuid": {
         "version": "3.9.3"
     },
@@ -310,6 +316,9 @@
             "./.env"
         ]
     },
+    "symfony/form": {
+        "version": "v5.0.8"
+    },
     "symfony/framework-bundle": {
         "version": "4.4",
         "recipe": {
@@ -342,6 +351,12 @@
     "symfony/http-kernel": {
         "version": "v5.0.5"
     },
+    "symfony/inflector": {
+        "version": "v5.0.8"
+    },
+    "symfony/intl": {
+        "version": "v5.0.8"
+    },
     "symfony/mailer": {
         "version": "4.3",
         "recipe": {
@@ -366,8 +381,14 @@
     "symfony/mime": {
         "version": "v5.0.5"
     },
+    "symfony/options-resolver": {
+        "version": "v5.0.8"
+    },
     "symfony/orm-pack": {
         "version": "v1.0.8"
+    },
+    "symfony/polyfill-intl-icu": {
+        "version": "v1.15.0"
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.14.0"
@@ -377,6 +398,9 @@
     },
     "symfony/polyfill-php73": {
         "version": "v1.14.0"
+    },
+    "symfony/property-access": {
+        "version": "v5.0.8"
     },
     "symfony/routing": {
         "version": "4.2",

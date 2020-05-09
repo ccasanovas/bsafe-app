@@ -1,62 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
   module.exports = [
     {
-      "id": "cordova-plugin-android-permissions.Permissions",
-      "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
-      "pluginId": "cordova-plugin-android-permissions",
-      "clobbers": [
-        "cordova.plugins.permissions"
-      ]
-    },
-    {
-      "id": "cordova-plugin-camera.Camera",
-      "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
-      "pluginId": "cordova-plugin-camera",
-      "clobbers": [
-        "Camera"
-      ]
-    },
-    {
-      "id": "cordova-plugin-camera.CameraPopoverOptions",
-      "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
-      "pluginId": "cordova-plugin-camera",
-      "clobbers": [
-        "CameraPopoverOptions"
-      ]
-    },
-    {
-      "id": "cordova-plugin-camera.camera",
-      "file": "plugins/cordova-plugin-camera/www/Camera.js",
-      "pluginId": "cordova-plugin-camera",
-      "clobbers": [
-        "navigator.camera"
-      ]
-    },
-    {
-      "id": "cordova-plugin-camera.CameraPopoverHandle",
-      "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
-      "pluginId": "cordova-plugin-camera",
-      "clobbers": [
-        "CameraPopoverHandle"
-      ]
-    },
-    {
-      "id": "cordova-plugin-crop.CropPlugin",
-      "file": "plugins/cordova-plugin-crop/www/crop.js",
-      "pluginId": "cordova-plugin-crop",
-      "clobbers": [
-        "plugins.crop"
-      ]
-    },
-    {
-      "id": "cordova-plugin-device.device",
-      "file": "plugins/cordova-plugin-device/www/device.js",
-      "pluginId": "cordova-plugin-device",
-      "clobbers": [
-        "device"
-      ]
-    },
-    {
       "id": "cordova-plugin-file.DirectoryEntry",
       "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
       "pluginId": "cordova-plugin-file",
@@ -228,6 +172,135 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
         "cordova"
       ],
       "runs": true
+    },
+    {
+      "id": "cordova-plugin-advanced-http.cookie-handler",
+      "file": "plugins/cordova-plugin-advanced-http/www/cookie-handler.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.dependency-validator",
+      "file": "plugins/cordova-plugin-advanced-http/www/dependency-validator.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.error-codes",
+      "file": "plugins/cordova-plugin-advanced-http/www/error-codes.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.global-configs",
+      "file": "plugins/cordova-plugin-advanced-http/www/global-configs.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.helpers",
+      "file": "plugins/cordova-plugin-advanced-http/www/helpers.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.js-util",
+      "file": "plugins/cordova-plugin-advanced-http/www/js-util.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.local-storage-store",
+      "file": "plugins/cordova-plugin-advanced-http/www/local-storage-store.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.lodash",
+      "file": "plugins/cordova-plugin-advanced-http/www/lodash.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.messages",
+      "file": "plugins/cordova-plugin-advanced-http/www/messages.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.ponyfills",
+      "file": "plugins/cordova-plugin-advanced-http/www/ponyfills.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.public-interface",
+      "file": "plugins/cordova-plugin-advanced-http/www/public-interface.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.tough-cookie",
+      "file": "plugins/cordova-plugin-advanced-http/www/umd-tough-cookie.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.url-util",
+      "file": "plugins/cordova-plugin-advanced-http/www/url-util.js",
+      "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+      "id": "cordova-plugin-advanced-http.http",
+      "file": "plugins/cordova-plugin-advanced-http/www/advanced-http.js",
+      "pluginId": "cordova-plugin-advanced-http",
+      "clobbers": [
+        "cordova.plugin.http"
+      ]
+    },
+    {
+      "id": "cordova-plugin-android-permissions.Permissions",
+      "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+      "pluginId": "cordova-plugin-android-permissions",
+      "clobbers": [
+        "cordova.plugins.permissions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.Camera",
+      "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "Camera"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.CameraPopoverOptions",
+      "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "CameraPopoverOptions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.camera",
+      "file": "plugins/cordova-plugin-camera/www/Camera.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "navigator.camera"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.CameraPopoverHandle",
+      "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "CameraPopoverHandle"
+      ]
+    },
+    {
+      "id": "cordova-plugin-crop.CropPlugin",
+      "file": "plugins/cordova-plugin-crop/www/crop.js",
+      "pluginId": "cordova-plugin-crop",
+      "clobbers": [
+        "plugins.crop"
+      ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
     },
     {
       "id": "cordova-plugin-file-transfer.FileTransferError",
@@ -411,89 +484,17 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
         "cordova.plugins.Keyboard"
       ],
       "runs": true
-    },
-    {
-      "id": "cordova-plugin-advanced-http.cookie-handler",
-      "file": "plugins/cordova-plugin-advanced-http/www/cookie-handler.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.dependency-validator",
-      "file": "plugins/cordova-plugin-advanced-http/www/dependency-validator.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.error-codes",
-      "file": "plugins/cordova-plugin-advanced-http/www/error-codes.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.global-configs",
-      "file": "plugins/cordova-plugin-advanced-http/www/global-configs.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.helpers",
-      "file": "plugins/cordova-plugin-advanced-http/www/helpers.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.js-util",
-      "file": "plugins/cordova-plugin-advanced-http/www/js-util.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.local-storage-store",
-      "file": "plugins/cordova-plugin-advanced-http/www/local-storage-store.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.lodash",
-      "file": "plugins/cordova-plugin-advanced-http/www/lodash.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.messages",
-      "file": "plugins/cordova-plugin-advanced-http/www/messages.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.ponyfills",
-      "file": "plugins/cordova-plugin-advanced-http/www/ponyfills.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.public-interface",
-      "file": "plugins/cordova-plugin-advanced-http/www/public-interface.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.tough-cookie",
-      "file": "plugins/cordova-plugin-advanced-http/www/umd-tough-cookie.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.url-util",
-      "file": "plugins/cordova-plugin-advanced-http/www/url-util.js",
-      "pluginId": "cordova-plugin-advanced-http"
-    },
-    {
-      "id": "cordova-plugin-advanced-http.http",
-      "file": "plugins/cordova-plugin-advanced-http/www/advanced-http.js",
-      "pluginId": "cordova-plugin-advanced-http",
-      "clobbers": [
-        "cordova.plugin.http"
-      ]
     }
   ];
   module.exports.metadata = {
     "cordova-android-support-gradle-release": "3.0.1",
+    "cordova-plugin-file": "6.0.2",
+    "cordova-plugin-advanced-http": "2.4.1",
     "cordova-plugin-android-permissions": "1.0.2",
     "cordova-plugin-camera": "4.1.0",
     "cordova-plugin-console": "1.0.5",
     "cordova-plugin-crop": "0.3.1",
     "cordova-plugin-device": "1.1.4",
-    "cordova-plugin-file": "6.0.2",
     "cordova-plugin-file-transfer": "1.7.1",
     "cordova-plugin-filepath": "1.5.8",
     "cordova-plugin-geolocation": "2.4.3",
@@ -505,7 +506,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-sms-plugin": "1.0.0",
     "cordova-sqlite-storage": "5.0.0",
     "cordova.plugins.diagnostic": "5.0.1",
-    "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-advanced-http": "2.4.1"
+    "ionic-plugin-keyboard": "2.2.1"
   };
 });

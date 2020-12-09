@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import {AuthServiceProvider} from "../providers/auth-service/auth-service";
+import {FCM} from "@ionic-native/fcm";
 
 @Component({
   templateUrl: 'app.html'
@@ -26,8 +27,24 @@ export class MyApp {
 
   constructor(platform: Platform, public SplashScreen: SplashScreen,
               public StatusBar: StatusBar, public loadingCtrl: LoadingController,
-              public alertCtrl: AlertController, public authService: AuthServiceProvider) {
+              public alertCtrl: AlertController, public authService: AuthServiceProvider,
+              private fcm: FCM) {
     platform.ready().then(() => {
+        // get FCM token
+        this.fcm.getToken().then(token => {
+          console.log("FCM Token: "+token);
+        });
+
+        // ionic push notification example
+        this.fcm.onNotification().subscribe(data => {
+          console.log(data);
+          if (data.wasTapped) {
+            console.log('Received in background');
+          } else {
+            console.log('Received in foreground');
+          }
+        });
+
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       const data = JSON.parse(localStorage.getItem('userData'));

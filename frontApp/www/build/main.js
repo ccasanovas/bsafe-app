@@ -124,173 +124,6 @@ var AddcontactmodalPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditprofilePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(17);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the EditprofilePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var EditprofilePage = /** @class */ (function () {
-    function EditprofilePage(navCtrl, navParams, modalCtrl, viewCtrl, authService, menuCtrl, alertCtrl, loadingCtrl) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-        this.viewCtrl = viewCtrl;
-        this.authService = authService;
-        this.menuCtrl = menuCtrl;
-        this.alertCtrl = alertCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.send_location = { isChecked: false };
-        this.userPostDataMessage = { "message": "",
-            "token": this.navParams.get('token'), "send_location": this.send_location, "username": this.navParams.get('username') };
-        this.userPostDataPassword = { "password": "", "newPassword": "", "newConfirmPassword": "",
-            "token": this.navParams.get('token'), "username": this.navParams.get('username') };
-        this.modalChangePassword = this.navParams.get('modalPassword');
-        this.modalChangeMessage = this.navParams.get('modalMessage');
-        this.menuCtrl.enable(false);
-    }
-    EditprofilePage.prototype.editMessageData = function () {
-        var _this = this;
-        var loader = this.loadingCtrl.create({
-            content: "Actualizando mensaje de emergencia"
-        });
-        loader.present();
-        if (this.userPostDataMessage.message
-            && this.userPostDataMessage.token) {
-            //Api connections
-            this.authService.postData(this.userPostDataMessage, "changeMessage").then(function (result) {
-                loader.dismiss();
-                _this.responseData = result;
-                if (_this.responseData.code == 200) {
-                    _this.dismissModal();
-                }
-            }).catch(function (err) {
-                console.log(err);
-                loader.dismiss();
-                if (err.status == 404) {
-                    var message = JSON.parse(err.error);
-                    _this.showalertData(message.status);
-                }
-                else {
-                    _this.showalertconnect();
-                }
-            });
-        }
-        else {
-            loader.dismiss();
-            this.showalertinfo();
-        }
-    };
-    EditprofilePage.prototype.showalertData = function (data) {
-        var alert = this.alertCtrl.create({
-            title: "Notificación",
-            subTitle: data,
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
-    EditprofilePage.prototype.editPasswordData = function () {
-        var _this = this;
-        var loader = this.loadingCtrl.create({
-            content: "Actualizando contraseña"
-        });
-        loader.present();
-        if (this.userPostDataPassword.newPassword
-            == this.userPostDataPassword.newConfirmPassword
-            && this.userPostDataPassword.token
-            && this.userPostDataPassword.newConfirmPassword.length > 5
-            && this.userPostDataPassword.newPassword.length > 5) {
-            //Api connections
-            this.authService.postData(this.userPostDataPassword, "changePassword").then(function (result) {
-                loader.dismiss();
-                _this.responseData = result;
-                if (_this.responseData.code == 200) {
-                    console.log(_this.responseData);
-                    _this.dismissModal();
-                }
-            }).catch(function (err) {
-                loader.dismiss();
-                if (err.status == 404) {
-                    var message = JSON.parse(err.error);
-                    _this.showalertData(message.status);
-                }
-                else {
-                    _this.showalertconnect();
-                }
-            });
-        }
-        else {
-            loader.dismiss();
-            this.showalertPassword();
-        }
-    };
-    EditprofilePage.prototype.showalertPassword = function () {
-        var alert = this.alertCtrl.create({
-            title: "Notificación",
-            subTitle: "Verifique que su nuevo password tenga más de 5 caractéres y ambos campos coincidan",
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
-    EditprofilePage.prototype.showalertinfo = function () {
-        var alert = this.alertCtrl.create({
-            title: "Notificación",
-            subTitle: "Por favor complete su mensaje de emergencia",
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
-    EditprofilePage.prototype.showalertconnect = function () {
-        var alert = this.alertCtrl.create({
-            title: "Notificación",
-            subTitle: "Ha fallado la conexión",
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
-    EditprofilePage.prototype.dismissModal = function () {
-        var result = "cerrando modal";
-        this.viewCtrl.dismiss(result);
-    };
-    EditprofilePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad EditprofilePage');
-    };
-    EditprofilePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-editprofile',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\editprofile\editprofile.html"*/'<!--\n  Generated template for the EditprofilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header *ngIf="modalChangeMessage" >\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Editar mensaje</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="modalChangeMessage"  class="login-content" padding>\n\n  <ion-card style="margin-top: 5%;">\n    <ion-card-header>\n      <ion-grid >\n        <ion-row>\n          <ion-item>\n            <ion-textarea placeholder="Ingrese su mensaje de emergencia aquí"  [(ngModel)]="userPostDataMessage.message"></ion-textarea>\n          </ion-item>\n        </ion-row>\n\n      </ion-grid>\n    </ion-card-header>\n\n  </ion-card>\n  <ion-row style="margin-top: 5%; visibility: hidden;">\n    <ion-label style="font-family: \'Roboto\'; color: #f1f1f1; font-weight: 400; font-size: 14px; width: 75%" >¿Desea enviar su ubicación <br> en el mensaje de emergencia?</ion-label>\n    <ion-checkbox style="margin-right: 15%"  color="secondary" checked="false" [(ngModel)]="send_location.isChecked"></ion-checkbox>\n  </ion-row>\n  <!-- Textarea in an item with a placeholder -->\n\n\n\n  <ion-fab  bottom right style="margin-right: 5%;">\n    <button class="ionFabClass" (click)="editMessageData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n\n\n\n<ion-header *ngIf="modalChangePassword" >\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Editar contraseña</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="modalChangePassword" class="login-content" padding>\n\n  <div class="login-box" style="margin-top: 5%">\n    <ion-row>\n      <ion-col>\n        <ion-list inset>\n          <ion-item style="background-color: #f1f1f1; margin-top: 4%; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">\n            <ion-input type="password" placeholder="Contraseña nueva"  [(ngModel)]="userPostDataPassword.newPassword" ></ion-input>\n          </ion-item>\n          <ion-item style="background-color: #f1f1f1; margin-top: 4%; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">\n            <ion-input type="password" placeholder="Confirmar contraseña"  [(ngModel)]="userPostDataPassword.newConfirmPassword" ></ion-input>\n          </ion-item>\n\n        </ion-list>\n      </ion-col>\n    </ion-row>\n\n  </div>\n  <!-- Textarea in an item with a placeholder -->\n\n\n\n  <ion-fab  bottom right style="margin-right: 5%; ">\n    <button class="ionFabClass" (click)="editPasswordData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\editprofile\editprofile.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
-    ], EditprofilePage);
-    return EditprofilePage;
-}());
-
-//# sourceMappingURL=editprofile.js.map
-
-/***/ }),
-
-/***/ 110:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
@@ -506,6 +339,173 @@ var ContactsPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 110:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditprofilePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the EditprofilePage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var EditprofilePage = /** @class */ (function () {
+    function EditprofilePage(navCtrl, navParams, modalCtrl, viewCtrl, authService, menuCtrl, alertCtrl, loadingCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.menuCtrl = menuCtrl;
+        this.alertCtrl = alertCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.send_location = { isChecked: false };
+        this.userPostDataMessage = { "message": "",
+            "token": this.navParams.get('token'), "send_location": this.send_location, "username": this.navParams.get('username') };
+        this.userPostDataPassword = { "password": "", "newPassword": "", "newConfirmPassword": "",
+            "token": this.navParams.get('token'), "username": this.navParams.get('username') };
+        this.modalChangePassword = this.navParams.get('modalPassword');
+        this.modalChangeMessage = this.navParams.get('modalMessage');
+        this.menuCtrl.enable(false);
+    }
+    EditprofilePage.prototype.editMessageData = function () {
+        var _this = this;
+        var loader = this.loadingCtrl.create({
+            content: "Actualizando mensaje de emergencia"
+        });
+        loader.present();
+        if (this.userPostDataMessage.message
+            && this.userPostDataMessage.token) {
+            //Api connections
+            this.authService.postData(this.userPostDataMessage, "changeMessage").then(function (result) {
+                loader.dismiss();
+                _this.responseData = result;
+                if (_this.responseData.code == 200) {
+                    _this.dismissModal();
+                }
+            }).catch(function (err) {
+                console.log(err);
+                loader.dismiss();
+                if (err.status == 404) {
+                    var message = JSON.parse(err.error);
+                    _this.showalertData(message.status);
+                }
+                else {
+                    _this.showalertconnect();
+                }
+            });
+        }
+        else {
+            loader.dismiss();
+            this.showalertinfo();
+        }
+    };
+    EditprofilePage.prototype.showalertData = function (data) {
+        var alert = this.alertCtrl.create({
+            title: "Notificación",
+            subTitle: data,
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
+    EditprofilePage.prototype.editPasswordData = function () {
+        var _this = this;
+        var loader = this.loadingCtrl.create({
+            content: "Actualizando contraseña"
+        });
+        loader.present();
+        if (this.userPostDataPassword.newPassword
+            == this.userPostDataPassword.newConfirmPassword
+            && this.userPostDataPassword.token
+            && this.userPostDataPassword.newConfirmPassword.length > 5
+            && this.userPostDataPassword.newPassword.length > 5) {
+            //Api connections
+            this.authService.postData(this.userPostDataPassword, "changePassword").then(function (result) {
+                loader.dismiss();
+                _this.responseData = result;
+                if (_this.responseData.code == 200) {
+                    console.log(_this.responseData);
+                    _this.dismissModal();
+                }
+            }).catch(function (err) {
+                loader.dismiss();
+                if (err.status == 404) {
+                    var message = JSON.parse(err.error);
+                    _this.showalertData(message.status);
+                }
+                else {
+                    _this.showalertconnect();
+                }
+            });
+        }
+        else {
+            loader.dismiss();
+            this.showalertPassword();
+        }
+    };
+    EditprofilePage.prototype.showalertPassword = function () {
+        var alert = this.alertCtrl.create({
+            title: "Notificación",
+            subTitle: "Verifique que su nuevo password tenga más de 5 caractéres y ambos campos coincidan",
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
+    EditprofilePage.prototype.showalertinfo = function () {
+        var alert = this.alertCtrl.create({
+            title: "Notificación",
+            subTitle: "Por favor complete su mensaje de emergencia",
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
+    EditprofilePage.prototype.showalertconnect = function () {
+        var alert = this.alertCtrl.create({
+            title: "Notificación",
+            subTitle: "Ha fallado la conexión",
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
+    EditprofilePage.prototype.dismissModal = function () {
+        var result = "cerrando modal";
+        this.viewCtrl.dismiss(result);
+    };
+    EditprofilePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad EditprofilePage');
+    };
+    EditprofilePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-editprofile',template:/*ion-inline-start:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\editprofile\editprofile.html"*/'<!--\n  Generated template for the EditprofilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header *ngIf="modalChangeMessage" >\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Editar mensaje</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="modalChangeMessage"  class="login-content" padding>\n\n  <ion-card style="margin-top: 5%;">\n    <ion-card-header>\n      <ion-grid >\n        <ion-row>\n          <ion-item>\n            <ion-textarea placeholder="Ingrese su mensaje de emergencia aquí"  [(ngModel)]="userPostDataMessage.message"></ion-textarea>\n          </ion-item>\n        </ion-row>\n\n      </ion-grid>\n    </ion-card-header>\n\n  </ion-card>\n  <ion-row style="margin-top: 5%; visibility: hidden;">\n    <ion-label style="font-family: \'Roboto\'; color: #f1f1f1; font-weight: 400; font-size: 14px; width: 75%" >¿Desea enviar su ubicación <br> en el mensaje de emergencia?</ion-label>\n    <ion-checkbox style="margin-right: 15%"  color="secondary" checked="false" [(ngModel)]="send_location.isChecked"></ion-checkbox>\n  </ion-row>\n  <!-- Textarea in an item with a placeholder -->\n\n\n\n  <ion-fab  bottom right style="margin-right: 5%;">\n    <button class="ionFabClass" (click)="editMessageData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n\n\n\n<ion-header *ngIf="modalChangePassword" >\n  <ion-navbar class="login-content">\n    <ion-buttons left menuToggle>\n      <button ion-button icon-only>\n        <ion-icon name="menu" style="color:#ffffff; font-size:30px;"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title style="text-align:center; font-family: \'Roboto\'">Editar contraseña</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="modalChangePassword" class="login-content" padding>\n\n  <div class="login-box" style="margin-top: 5%">\n    <ion-row>\n      <ion-col>\n        <ion-list inset>\n          <ion-item style="background-color: #f1f1f1; margin-top: 4%; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">\n            <ion-input type="password" placeholder="Contraseña nueva"  [(ngModel)]="userPostDataPassword.newPassword" ></ion-input>\n          </ion-item>\n          <ion-item style="background-color: #f1f1f1; margin-top: 4%; font-family: \'Roboto\'; font-weight: 400; font-size: 16px">\n            <ion-input type="password" placeholder="Confirmar contraseña"  [(ngModel)]="userPostDataPassword.newConfirmPassword" ></ion-input>\n          </ion-item>\n\n        </ion-list>\n      </ion-col>\n    </ion-row>\n\n  </div>\n  <!-- Textarea in an item with a placeholder -->\n\n\n\n  <ion-fab  bottom right style="margin-right: 5%; ">\n    <button class="ionFabClass" (click)="editPasswordData()" ion-fab color="primary"><ion-icon style="color: #f1f1f1" name="checkmark-circle-outline"></ion-icon></button>\n  </ion-fab>\n\n  <ion-fab  bottom right style="margin-right: 25%; ">\n    <button class="ionFabClass" (click)="dismissModal()" ion-fab color="primary"><ion-icon style="color: #f1f1f1"  name="close"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"C:\ccasanovasgit\bsafe-app\frontApp\src\pages\editprofile\editprofile.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
+    ], EditprofilePage);
+    return EditprofilePage;
+}());
+
+//# sourceMappingURL=editprofile.js.map
+
+/***/ }),
+
 /***/ 111:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -514,7 +514,7 @@ var ContactsPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__editprofile_editprofile__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__editprofile_editprofile__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_transfer__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_camera__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_file__ = __webpack_require__(172);
@@ -889,7 +889,7 @@ webpackEmptyAsyncContext.id = 120;
 
 var map = {
 	"../pages/addcontactmodal/addcontactmodal.module": [
-		292,
+		293,
 		6
 	],
 	"../pages/contacts/contacts.module": [
@@ -897,23 +897,23 @@ var map = {
 		5
 	],
 	"../pages/editprofile/editprofile.module": [
-		293,
+		295,
 		4
 	],
 	"../pages/forgot-password/forgot-password.module": [
-		295,
+		296,
 		3
 	],
 	"../pages/login/login.module": [
-		296,
+		297,
 		2
 	],
 	"../pages/myprofile/myprofile.module": [
-		297,
+		298,
 		1
 	],
 	"../pages/register/register.module": [
-		298,
+		299,
 		0
 	]
 };
@@ -940,7 +940,7 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_http__ = __webpack_require__(164);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -989,13 +989,13 @@ var AuthServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 216:
+/***/ 217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(240);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1003,7 +1003,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 239:
+/***/ 240:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1011,8 +1011,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(289);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_geolocation__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__ = __webpack_require__(214);
@@ -1022,10 +1022,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_tabs_tabs__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_contacts_contacts__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_contacts_contacts__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_addcontactmodal_addcontactmodal__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_myprofile_myprofile__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_editprofile_editprofile__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_editprofile_editprofile__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_sms__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_camera__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_file_transfer__ = __webpack_require__(170);
@@ -1036,12 +1036,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_location_accuracy__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_http__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_forgot_password_forgot_password__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_fcm__ = __webpack_require__(215);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1093,8 +1095,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/addcontactmodal/addcontactmodal.module#AddcontactmodalPageModule', name: 'AddcontactmodalPage', segment: 'addcontactmodal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/editprofile/editprofile.module#EditprofilePageModule', name: 'EditprofilePage', segment: 'editprofile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/contacts/contacts.module#ContactsPageModule', name: 'ContactsPage', segment: 'contacts', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/editprofile/editprofile.module#EditprofilePageModule', name: 'EditprofilePage', segment: 'editprofile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/forgot-password/forgot-password.module#ForgotPasswordPageModule', name: 'ForgotPasswordPage', segment: 'forgot-password', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/myprofile/myprofile.module#MyprofilePageModule', name: 'MyprofilePage', segment: 'myprofile', priority: 'low', defaultHistory: [] },
@@ -1132,6 +1134,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_25__ionic_native_location_accuracy__["a" /* LocationAccuracy */],
                 __WEBPACK_IMPORTED_MODULE_23__ionic_native_android_permissions__["a" /* AndroidPermissions */],
                 __WEBPACK_IMPORTED_MODULE_22__ionic_native_file_path__["a" /* FilePath */],
+                __WEBPACK_IMPORTED_MODULE_28__ionic_native_fcm__["a" /* FCM */]
             ]
         })
     ], AppModule);
@@ -1142,7 +1145,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 289:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1155,6 +1158,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_auth_service_auth_service__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_fcm__ = __webpack_require__(215);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1172,20 +1176,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var MyApp = /** @class */ (function () {
-    function MyApp(platform, SplashScreen, StatusBar, loadingCtrl, alertCtrl, authService) {
+    function MyApp(platform, SplashScreen, StatusBar, loadingCtrl, alertCtrl, authService, fcm) {
         var _this = this;
         this.SplashScreen = SplashScreen;
         this.StatusBar = StatusBar;
         this.loadingCtrl = loadingCtrl;
         this.alertCtrl = alertCtrl;
         this.authService = authService;
+        this.fcm = fcm;
         this.rootPage = __WEBPACK_IMPORTED_MODULE_2__pages_login_login__["a" /* LoginPage */];
         this.userPostData = {
             "token": "",
             "username": ""
         };
         platform.ready().then(function () {
+            // get FCM token
+            _this.fcm.getToken().then(function (token) {
+                console.log("FCM Token: " + token);
+            });
+            // ionic push notification example
+            _this.fcm.onNotification().subscribe(function (data) {
+                console.log(data);
+                if (data.wasTapped) {
+                    console.log('Received in background');
+                }
+                else {
+                    console.log('Received in foreground');
+                }
+            });
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
             var data = JSON.parse(localStorage.getItem('userData'));
@@ -1256,7 +1276,8 @@ var MyApp = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_7__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_7__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_8__ionic_native_fcm__["a" /* FCM */]])
     ], MyApp);
     return MyApp;
 }());
@@ -1402,7 +1423,7 @@ var LoginPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_contacts__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_contacts__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__myprofile_myprofile__ = __webpack_require__(111);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1873,7 +1894,7 @@ var HomePage = /** @class */ (function () {
                         });
                         alert_1.present();
                         alert_1.onDidDismiss(function (data) {
-                            _this.getFeed();
+                            _this.getPermissions();
                             console.log(data);
                         });
                     }
@@ -2047,5 +2068,5 @@ var HomePage = /** @class */ (function () {
 
 /***/ })
 
-},[216]);
+},[217]);
 //# sourceMappingURL=main.js.map

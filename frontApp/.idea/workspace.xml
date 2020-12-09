@@ -2,7 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e25fd42-eddf-4b78-98bd-647c61bb53dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../devRest/cron-suite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/bsafe-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/bsafe-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/sonarIssues.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/0/9/09652a6497de0403bd2090e61381ced4d8bf7fe3" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/0/9/09652a6497de0403bd2090e61381ced4d8bf7fe3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/2/f/2f9aed115c0eb1ee58489df5c1cba407280589a4" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/2/f/2f9aed115c0eb1ee58489df5c1cba407280589a4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/6/7/672f604204e0511f7f0ebf0638ff4f86bd1d3f01" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/sonarlint/issuestore/6/7/672f604204e0511f7f0ebf0638ff4f86bd1d3f01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/src/Controller/ApiUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/src/Controller/ApiUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devRest/src/Controller/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../devRest/src/Controller/LocationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/build/vendor.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/com/ionicframework/cordova/webview/IonicWebViewEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/java/com/ionicframework/cordova/webview/IonicWebViewEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/cordova/plugins/Diagnostic.java" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/java/cordova/plugins/Diagnostic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/cordova/plugins/Diagnostic_External_Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/java/cordova/plugins/Diagnostic_External_Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/cordova/plugins/Diagnostic_Notifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/java/cordova/plugins/Diagnostic_Notifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/camera/CameraLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/camera/CameraLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/camera/CordovaUri.java" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/camera/CordovaUri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/camera/FileProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/camera/FileProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/fetch.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fetch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/vendor.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +92,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../app-jas/JasIonicApp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -145,6 +205,12 @@
       <workItem from="1588777897843" duration="12000" />
       <workItem from="1588804053690" duration="2552000" />
       <workItem from="1589048662534" duration="4553000" />
+      <workItem from="1590422326382" duration="739000" />
+      <workItem from="1590438409291" duration="2200000" />
+      <workItem from="1590489204997" duration="1265000" />
+      <workItem from="1590594923194" duration="155000" />
+      <workItem from="1590790939584" duration="1254000" />
+      <workItem from="1590857541244" duration="151000" />
     </task>
     <servers />
   </component>
@@ -160,10 +226,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="464" y="155" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586821107883" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1588640691506">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1590857699091">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588640691506" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590857699091" />
     <state width="1323" height="149" key="GridCell.Tab.0.bottom" timestamp="1587794064941">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

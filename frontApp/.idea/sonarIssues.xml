@@ -208,6 +208,71 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/app/app.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/dashboard/dashboard.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/dashboard/dashboard.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/organization-cuit/organization-cuit.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/organization/organization.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/organization/organization.scss">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/service-details/service-details.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/service-details/service-details.scss">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/service-list/service-list.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/service-list/service-list.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/service-suscription/service-suscription.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/services/services.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/src/pages/services/services.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../app-jas/src/pages/document-details/document-details.ts">
           <value>
             <set />

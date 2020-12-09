@@ -1,0 +1,5 @@
+
+b	php:S1192$"MDefine a constant instead of duplicating this literal "phone_number" 3 times.(Ùº
+a	php:S1192$"LDefine a constant instead of duplicating this literal "api_user_id" 4 times.(Ùº
+a	php:S1192+"GDefine a constant instead of duplicating this literal "status" 6 times.(ÜÊˆ©øÿÿÿÿ
+=	php:S1481R")Remove this unused "$key" local variable.(Û§œ1

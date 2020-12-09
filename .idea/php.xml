@@ -112,6 +112,8 @@
       <path value="$PROJECT_DIR$/devRest/vendor/symfony/form" />
       <path value="$PROJECT_DIR$/devRest/vendor/symfony/options-resolver" />
       <path value="$PROJECT_DIR$/devRest/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/devRest/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/devRest/vendor/brick/math" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

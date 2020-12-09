@@ -26,6 +26,7 @@ import { Diagnostic } from '@ionic-native/diagnostic';
 import { LocationAccuracy } from '@ionic-native/location-accuracy';
 import {HTTP} from "@ionic-native/http";
 import {ForgotPasswordPage} from "../pages/forgot-password/forgot-password";
+import {FCM} from "@ionic-native/fcm";
 
 // @ts-ignore
 @NgModule({
@@ -75,6 +76,7 @@ import {ForgotPasswordPage} from "../pages/forgot-password/forgot-password";
     LocationAccuracy,
     AndroidPermissions,
     FilePath,
+    FCM
   ]
 })
 export class AppModule {

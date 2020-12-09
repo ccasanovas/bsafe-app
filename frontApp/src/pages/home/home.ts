@@ -110,7 +110,7 @@ export class HomePage {
               });
               alert.present();
               alert.onDidDismiss((data) => {
-                this.getFeed();
+                this.getPermissions();
                 console.log(data);
               });
             }

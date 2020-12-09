@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/devRest/src" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/aferrandini/urlizer" />
+      <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/doctrine/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/doctrine/cache" />
@@ -64,6 +65,7 @@
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/psr/simple-cache" />
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/ramsey/collection" />
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/ramsey/uuid" />
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/riverline/multipart-parser" />
       <excludeFolder url="file://$MODULE_DIR$/devRest/vendor/rize/uri-template" />

@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../app-jas/JasIonicApp/config.xml">
           <value>
             <set />
@@ -709,6 +714,51 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../xampp/htdocs/FormRecognizer-master/formRecognizerClass.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../vikbookingMP/mercadopago.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../vikbookingMP/mypay.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../vikbookingMP/utils.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../vikbookingMP/vikappointments/mercadopago.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../vikbookingMP/vikappointments/mypay.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../vikbookingMP/vikbooking/mercadopago.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../vikbookingMP/vikbooking/mypay.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../vikbookingMP/vikmercadopago.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../vikbookingMP/vikmypay.php">
           <value>
             <set />
           </value>

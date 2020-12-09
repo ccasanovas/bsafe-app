@@ -10,11 +10,11 @@ use App\Entity\FeedQuote;
 use App\Validator\NewUserRequest;
 use Doctrine\ORM\EntityManagerInterface;
 use GuzzleHttp\Psr7\UploadedFile;
-use Ramsey\Uuid\Uuid;
 use PascalDeVink\ShortUuid\ShortUuid;
-use Symfony\Component\HttpFoundation\Request;
+use Ramsey\Uuid\Uuid;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
@@ -46,19 +46,32 @@ class ApiUserController extends AbstractController
                     'code' => 200,
                     'status' => 'Usuario registrado con éxito',
                     'userData' =>
-                    ['token' => $token->idToken(),
-                        'username' => $user->getEmail()
-                    ],
+                        ['token' => $token->idToken(),
+                            'username' => $user->getEmail()
+                        ],
                 ], Response::HTTP_OK);
             } else {
                 return new JsonResponse(['code' => 404,
                     'status' => 'El usuario se encuentra registrado previamente'], Response::HTTP_NOT_FOUND);
             }
-        } catch (\Exception $exception){
+        } catch (\Exception $exception) {
             return new JsonResponse([
                 'code' => 404,
                 'status' => 'El usuario se encuentra registrado previamente'], Response::HTTP_NOT_FOUND);
-            }
+        }
+    }
+
+    function generateUid($data)
+    {
+        try {
+            $uuid = Uuid::uuid5(Uuid::NAMESPACE_URL, $data);
+            $shortUuid = new ShortUuid();
+            $password = $shortUuid->encode($uuid);
+            // Cognito requiere claves alfanumericas, por lo forzamos un 1 al final del string generado cuando no lo es.
+            return $password;
+        } catch (\Exception $e) {
+            throw new NotFoundHttpException('Uuid no se pudo resolver!');
+        }
     }
 
     /**
@@ -66,25 +79,28 @@ class ApiUserController extends AbstractController
      */
     public function login(NewUserRequest $newUserRequest, FirebaseController $firebaseController)
     {
-        $user = $this->apiUserRepository->findOneBy(['email' => $newUserRequest->username(), 'password' => $this->generateUid($newUserRequest->password())]);
-        if ($user) {
-            try {
+        try {
+
+            $user = $this->apiUserRepository->findOneBy(['email' => $newUserRequest->username()]);
+            if ($user) {
                 $token = $this->apiUserPushRepository->findOneBy(['api_user_id' => $user->getId()]);
                 $signIn = $firebaseController->loginToken($newUserRequest->username(), $this->generateUid($newUserRequest->password()));
                 $this->apiUserPushRepository->updatePushTokens($signIn->refreshToken(), $token);
-                    return new JsonResponse(
-                        [   'code' => 200,
-                            'status' => 'Usuario logueado correctamente',
-                            'userData' =>
-                            [   'token' => $signIn->idToken(),
+                return new JsonResponse(
+                    ['code' => 200,
+                        'status' => 'Usuario logueado correctamente',
+                        'userData' =>
+                            ['token' => $signIn->idToken(),
                                 'username' => $user->getEmail()]], Response::HTTP_OK);
-            } catch (\Exception $exception) {
-                return new JsonResponse(['code' => 404,
-                                        'status' => 'Hubo un problema iniciando sesión'], Response::HTTP_NOT_FOUND);
+            } else {
+                return new JsonResponse([
+                    'code' => 404,
+                    'status' => 'El usuario ingresado no se encuentra registrado'], Response::HTTP_NOT_FOUND);
             }
+        } catch (\Exception $exception) {
+            return new JsonResponse(['code' => 404,
+                'status' => 'Hubo un problema iniciando sesión'], Response::HTTP_NOT_FOUND);
         }
-        return new JsonResponse(['code' => 404,
-            'status' => 'El usuario o la contraseña ingresadas con incorrectas'], Response::HTTP_NOT_FOUND);
     }
 
     /**
@@ -107,8 +123,8 @@ class ApiUserController extends AbstractController
                 'code' => 200,
                 'status' => 'Usuario logueado correctamente',
                 'userData' =>
-                [   'token' => $fireBaseUser->idToken(),
-                    'username' => $user->getEmail()]], Response::HTTP_OK);
+                    ['token' => $fireBaseUser->idToken(),
+                        'username' => $user->getEmail()]], Response::HTTP_OK);
     }
 
     /**
@@ -116,7 +132,7 @@ class ApiUserController extends AbstractController
      */
     public function changePassword(NewUserRequest $newUserRequest, FirebaseController $firebaseController)
     {
-        $verifiedToken= $firebaseController->verifyTokenId($newUserRequest->push_token(), $newUserRequest->username());
+        $verifiedToken = $firebaseController->verifyTokenId($newUserRequest->push_token(), $newUserRequest->username());
         try {
             $user = $this->apiUserRepository->findOneBy(['email' => $verifiedToken->email]);
             $entityToken = $this->apiUserPushRepository->findOneBy(['api_user_id' => $user->getId()]);
@@ -129,33 +145,10 @@ class ApiUserController extends AbstractController
                 'contactData' => $this->getUserDetails($user->getId()),
                 'token' => $token->idToken(),
                 'user_id' => $newUserRequest->user_id()], Response::HTTP_OK);
-        } catch (\Exception $exception){
+        } catch (\Exception $exception) {
             return new JsonResponse([
                 'code' => 404,
                 'status' => 'Hubo un error editando el password'], Response::HTTP_NOT_FOUND);
-        }
-    }
-
-    /**
-     * @Route("/changeMessage", name="api_user_changeMessage")
-     */
-    public function changeMessage(NewUserRequest $newUserRequest, FirebaseController $firebaseController)
-    {
-        $verifiedToken= $firebaseController->verifyTokenId($newUserRequest->push_token(), $newUserRequest->username());
-        try {
-        $user = $this->apiUserRepository->findOneBy(['email' => $verifiedToken->email]);
-        $this->apiUserRepository->updateApiUserMessage($user, $newUserRequest->message(), $newUserRequest->send_location());
-        return new JsonResponse([
-            'code' => 200,
-            'status' => 'Mensaje de emergencia editado correctamente',
-            'contactData' => $this->getUserDetails($user->getId()),
-            'token' => $newUserRequest->push_token(),
-            'user_id' => $newUserRequest->user_id()], Response::HTTP_OK);
-        } catch (\Exception $e){
-            return new JsonResponse([
-                'code' => 404,
-                'status' => 'Hubo un error editando su mensaje de emergencia',
-               ], Response::HTTP_NOT_FOUND);
         }
     }
 
@@ -163,6 +156,29 @@ class ApiUserController extends AbstractController
     {
         $profileDataUser = $this->apiUserRepository->findOneBy(['id' => $userId]);
         return ['username' => $profileDataUser->getEmail(), 'avatar' => $profileDataUser->getAvatarUrl()];
+    }
+
+    /**
+     * @Route("/changeMessage", name="api_user_changeMessage")
+     */
+    public function changeMessage(NewUserRequest $newUserRequest, FirebaseController $firebaseController)
+    {
+        $verifiedToken = $firebaseController->verifyTokenId($newUserRequest->push_token(), $newUserRequest->username());
+        try {
+            $user = $this->apiUserRepository->findOneBy(['email' => $verifiedToken->email]);
+            $this->apiUserRepository->updateApiUserMessage($user, $newUserRequest->message(), $newUserRequest->send_location());
+            return new JsonResponse([
+                'code' => 200,
+                'status' => 'Mensaje de emergencia editado correctamente',
+                'contactData' => $this->getUserDetails($user->getId()),
+                'token' => $newUserRequest->push_token(),
+                'user_id' => $newUserRequest->user_id()], Response::HTTP_OK);
+        } catch (\Exception $e) {
+            return new JsonResponse([
+                'code' => 404,
+                'status' => 'Hubo un error editando su mensaje de emergencia',
+            ], Response::HTTP_NOT_FOUND);
+        }
     }
 
     /**
@@ -175,7 +191,7 @@ class ApiUserController extends AbstractController
         try {
             /** @var UploadedFile $uploadedFile */
             $uploadedFile = $newUserRequest->files->get('file');
-            $destination = $this->getParameter('kernel.project_dir').'/public/uploads';
+            $destination = $this->getParameter('kernel.project_dir') . '/public/uploads';
             $originalName = pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME);
             $newFileName = $originalName . '-' . uniqid() . '.' . $uploadedFile->guessExtension();
             $user = $this->apiUserRepository->findOneBy(['email' => $verifiedToken->email]);
@@ -185,8 +201,8 @@ class ApiUserController extends AbstractController
             return new JsonResponse([
                 'code' => 200,
                 'status' => 'Imagen subida correctamente'], Response::HTTP_OK);
-        } catch (\Exception $e){
-            return  new JsonResponse([
+        } catch (\Exception $e) {
+            return new JsonResponse([
                 'code' => 404,
                 'status' => 'Hubo un error subiendo la imagen'], RESPONSE::HTTP_NOT_FOUND);
         }
@@ -196,20 +212,20 @@ class ApiUserController extends AbstractController
      * @Route("/forgotPassword", name="api_user_forgotPassword")
      */
     public function forgotPassword(NewUserRequest $newUserRequest,
-                           MailerController $mailerController)
+                                   MailerController $mailerController)
     {
         $user = $this->apiUserRepository->findOneBy(['email' => $newUserRequest->username()]);
-        try{
-        if ($user) {
-            $mailerController->sendEmail($newUserRequest->username(), ($user->getPassword()));
-            // $firebaseController->forgotPassword($newUserRequest->username(), $user->getPassword());
-            return new JsonResponse([
-                'code' => 200,
-                'status' => 'Su solicitud de cambio de contraseña fue enviado con éxito. Verifique su casilla
+        try {
+            if ($user) {
+                $mailerController->sendEmail($newUserRequest->username(), ($user->getPassword()));
+                // $firebaseController->forgotPassword($newUserRequest->username(), $user->getPassword());
+                return new JsonResponse([
+                    'code' => 200,
+                    'status' => 'Su solicitud de cambio de contraseña fue enviado con éxito. Verifique su casilla
                 de email para continuar',
-            ], Response::HTTP_OK);
-        }
-        } catch (\Exception $e){
+                ], Response::HTTP_OK);
+            }
+        } catch (\Exception $e) {
             return new JsonResponse([
                 'code' => 404,
                 'status' => 'Hubo un error solicitando su cambio de contraseña',
@@ -219,19 +235,6 @@ class ApiUserController extends AbstractController
             'code' => 404,
             'status' => 'Su usuario no se encuentra registrado',
         ], Response::HTTP_NOT_FOUND);
-    }
-
-    function generateUid($data)
-    {
-        try {
-            $uuid = Uuid::uuid5(Uuid::NAMESPACE_URL, $data);
-            $shortUuid = new ShortUuid();
-            $password = $shortUuid->encode($uuid);
-            // Cognito requiere claves alfanumericas, por lo forzamos un 1 al final del string generado cuando no lo es.
-            return $password;
-        } catch (\Exception $e) {
-            throw new NotFoundHttpException('Uuid no se pudo resolver!');
-        }
     }
 
 }

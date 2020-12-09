@@ -33,7 +33,7 @@ class LocationController extends AbstractController
         try {
             $user = $this->apiUserRepository->findOneBy(['email' => $verifiedToken->email]);
             $data = $this->locationIQGeocode($newUserRequest->lat(), $newUserRequest->lng());
-            $locationSaved = $this->apiUserLocationRepository->findBy(['api_user_id' => $user->getId()]);
+            $locationSaved = $this->apiUserLocationRepository->findOneBy(['api_user_id' => $user->getId()]);
             if (count($locationSaved) == 0) {
                 $this->apiUserLocationRepository->saveLocation($user->getId(), $data);
             } else {
